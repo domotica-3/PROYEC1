@@ -2,64 +2,40 @@
 <html>
 <head>
     <title>Índice</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        h1 {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 5px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        a:hover {
-            color: #555;
-        }
-
-        h2 {
-            background-color: #eee;
-            padding: 10px;
-        }
-
-        p {
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Índice</h1>
-    <ul>
-        <li><a href="#seccion1">Sección 1</a></li>
-        <li><a href="#seccion2">Sección 2</a></li>
-        <li><a href="#seccion3">Sección 3</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Índice</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccion1">Sección 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccion2">Sección 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seccion3">Sección 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <h2 id="seccion1">Sección 1</h2>
-    <p>Contenido de la sección 1.</p>
+    <div class="container mt-4">
+        <h2 id="seccion1">Título 1</h2>
+        <p>Contenido de la sección 1.</p>
 
-    <h2 id="seccion2">Sección 2</h2>
-    <p>Contenido de la sección 2.</p>
+        <h2 id="seccion2">Sección 2</h2>
+        <p>Contenido de la sección 2.</p>
 
-    <h2 id="seccion3">Sección 3</h2>
-    <p>Contenido de la sección 3.</p>
+        <h2 id="seccion3">Sección 3</h2>
+        <p>Contenido de la sección 3.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
