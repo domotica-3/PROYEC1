@@ -1,10 +1,12 @@
 /* Estilos para la sección "Objetivos" */
 .section-objetivos {
-    background-color: #fff;
+    background-image: url("imagenes/objetivos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: #fff;
 }
 
 .section-objetivos h2 {
@@ -23,6 +25,4 @@
 .section-objetivos .objetivo-general {
     font-weight: bold;
 }
-
-/* Agregar cualquier estilo adicional necesario para esta sección */
 
