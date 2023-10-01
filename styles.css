@@ -1,6 +1,6 @@
 body {
-    background-color: #fff;
-    font-family: sans-serif;
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.6;
 }
@@ -14,8 +14,8 @@ h1 {
 }
 
 p {
-    color: #007bff;
-    margin-bottom: 10px;
+    color: #333; /* Color de texto más oscuro para mejorar la legibilidad */
+    margin-bottom: 20px; /* Mayor espacio entre párrafos para una mejor lectura */
 }
 
 img {
@@ -32,24 +32,23 @@ img {
 }
 
 .navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    background-color: #007bff;
 }
 
 .navbar-brand {
-    color: #007bff;
-    font-size: 28px;
+    color: #fff;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-    color: #007bff;
+    color: #fff;
     font-size: 18px;
     padding: 10px 20px;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #ccc;
+    background-color: #0056b3; /* Cambio de color al pasar el ratón para un efecto más llamativo */
 }
 
 .container {
@@ -64,22 +63,25 @@ img {
 .section-header {
     text-align: center;
     margin-top: 20px;
+    color: #007bff; /* Color más vibrante para los encabezados de sección */
 }
 
 .section-content {
     margin-top: 20px;
+    color: #333; /* Color de texto más oscuro para una mejor lectura */
 }
 
 .imagen-casa {
     position: absolute;
-    z-index: 0;
+    z-index: -1; /* Mover la imagen detrás del contenido */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.2; /* Disminuir la opacidad para un efecto de fondo sutil */
 }
 
+/* Estilos de sección con colores alternativos */
 .section-1 {
     background-color: #f7f7f7;
 }
