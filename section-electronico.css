@@ -1,1 +1,28 @@
+/* Estilos para la sección "Esquemático Electrónico" */
+.section-electronico {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.section-electronico h2 {
+    color: #007bff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-electronico p {
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para esta sección */
+.section-electronico .diagrama {
+    font-weight: bold;
+}
+
+/* Agregar cualquier estilo adicional necesario para esta sección */
 
