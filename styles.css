@@ -141,3 +141,70 @@ img {
         font-size: 28px;
     }
 }
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: transparent; /* Fondo transparente */
+    border-bottom: none; /* Sin borde inferior */
+    padding: 0; /* Sin relleno */
+    margin-bottom: 0; /* Sin margen inferior */
+    position: absolute; /* Barra de navegación fuera del flujo normal */
+    width: 100%; /* Ancho completo */
+}
+
+.navbar-brand {
+    color: #000; /* Color de texto */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #000; /* Color del icono del botón de menú */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Color de texto de los enlaces */
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: transparent;
+    color: #007bff; /* Color de texto al pasar el mouse */
+}
+
+/* Estilos para el campo de búsqueda en la barra de navegación */
+.form-inline {
+    margin-left: auto; /* Mover el formulario al lado derecho */
+}
+
+.form-control {
+    border: none; /* Sin borde en el campo de búsqueda */
+    border-radius: 0; /* Sin esquinas redondeadas */
+    background-color: transparent; /* Fondo transparente */
+    color: #000; /* Color del texto en el campo de búsqueda */
+}
+
+.btn-outline-light {
+    border-color: #000; /* Color del borde del botón de búsqueda */
+    color: #000; /* Color del texto del botón de búsqueda */
+}
+
+/* Estilos para la navegación al hacer scroll */
+@media (min-width: 992px) {
+    .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.95); /* Fondo con transparencia al hacer scroll */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera al hacer scroll */
+    }
+
+    .navbar.scrolled .navbar-brand,
+    .navbar.scrolled .nav-link,
+    .navbar.scrolled .navbar-toggler-icon {
+        color: #000; /* Cambiar el color del texto y el icono al hacer scroll */
+    }
+}
+
