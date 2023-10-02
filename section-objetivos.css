@@ -7,11 +7,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
+    text-align: center; /* Centrar el contenido en la sección */
 }
 
 .section-objetivos h2 {
     color: #007bff;
-    font-size: 28px;
+    font-size: 36px; /* Aumentar el tamaño del título */
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -19,6 +20,7 @@
 
 .section-objetivos p {
     margin-bottom: 20px;
+    font-size: 18px; /* Aumentar el tamaño del texto */
 }
 
 /* Estilos específicos para esta sección */
@@ -26,3 +28,9 @@
     font-weight: bold;
 }
 
+/* Estilos para el texto dentro de la imagen de fondo */
+.section-objetivos .texto-fondo {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer el texto más legible */
+    padding: 20px;
+    border-radius: 10px;
+}
