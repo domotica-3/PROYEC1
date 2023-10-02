@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="objetivos.css"> <!-- Vincula el archivo CSS específico de la sección "Objetivos" -->
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Domótica - Tecnología para el Hogar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="objetivos.css"> <!-- Vincula el archivo CSS específico de la sección "Objetivos" -->
 </head>
 <body>
+    <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Casa Domótica</a>
@@ -37,19 +47,13 @@
                         <a class="nav-link" href="#seccion6">Cumplimiento de Normas ISO</a>
                     </li>
                 </ul>
+                <form class="form-inline ml-auto"> <!-- Campo de búsqueda -->
+                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
     </nav>
-
-    <!-- Motor de Búsqueda -->
-    <div class="container mt-4">
-        <h2>Buscar</h2>
-        <form id="search-form">
-            <input type="text" id="search-input" placeholder="Buscar en la página...">
-            <button type="submit">Buscar</button>
-        </form>
-        <div id="search-results" class="mt-4"></div>
-    </div>
 
     <!-- Imagen principal "Casa" -->
     <div class="container">
