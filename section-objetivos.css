@@ -1,5 +1,5 @@
 /* Estilos para la sección "Objetivos" */
-.section-objetivos {
+.section-1 {
     background-image: url("imagenes/objetivos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +10,7 @@
     text-align: center; /* Centrar el contenido en la sección */
 }
 
-.section-objetivos h2 {
+.section-1 h2 {
     color: #007bff;
     font-size: 36px; /* Aumentar el tamaño del título */
     font-weight: bold;
@@ -18,18 +18,18 @@
     margin-bottom: 20px;
 }
 
-.section-objetivos p {
+.section-1 p {
     margin-bottom: 20px;
     font-size: 18px; /* Aumentar el tamaño del texto */
 }
 
 /* Estilos específicos para esta sección */
-.section-objetivos .objetivo-general {
+.section-1 .objetivo-general {
     font-weight: bold;
 }
 
 /* Estilos para el texto dentro de la imagen de fondo */
-.section-objetivos .texto-fondo {
+.section-1 .texto-fondo {
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer el texto más legible */
     padding: 20px;
     border-radius: 10px;
