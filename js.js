@@ -1,12 +1,15 @@
 $(document).ready(function() {
-    let currentImage = 1;
-    const totalImages = $(".imagenes img").length;
+    // Array de nombres de imágenes
+    var imagenes = ["imagenes/Casa.jpg", "imagenes/diagrama_normativa_isa.jpg", "imagenes/esquema_conexiones.jpg"];
+    var indice = 0; // Índice actual de la imagen
 
-    function changeImage() {
-        $(".imagenes img").css("transform", "translateX(-" + (currentImage - 1) * 100 + "%)");
-        currentImage = (currentImage % totalImages) + 1;
+    // Función para cambiar la imagen
+    function cambiarImagen() {
+        $("#imagen1").attr("src", imagenes[indice]);
+        // Incrementa el índice o reinícialo si llega al final
+        indice = (indice + 1) % imagenes.length;
     }
 
-    setInterval(changeImage, 300000); // Cambia la imagen cada 30 segundos
+    // Llama a la función para cambiar la imagen cada cierto tiempo (por ejemplo, cada 3 segundos)
+    setInterval(cambiarImagen, 3000);
 });
-
