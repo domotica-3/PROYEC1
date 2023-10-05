@@ -1,151 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Domótica - Tecnología para el Hogar</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="objetivos.css"> <!-- Vincula el archivo CSS específico de la sección "Objetivos" -->
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Domótica - Tecnología para el Hogar</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="objetivos.css"> <!-- Vincula el archivo CSS específico de la sección "Objetivos" -->
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Casa Domótica</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seccion1">Objetivos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seccion2">Esquema de Conexiones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seccion3">Esquemático Electrónico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seccion4">Diagrama Normativa (ISA)</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seccion5">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seccion6">Cumplimiento de Normas ISO</a>
-                    </li>
-                </ul>
-                <form class="form-inline ml-auto"> <!-- Campo de búsqueda -->
-                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#explicacion">Explicación</a></li>
+                <li><a href="#desafios">Desafíos</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="busqueda">
+                <li>
+                    <form action="buscar.php" method="GET">
+                        <input type="text" name="q" placeholder="Buscar">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenido">
+        <div class="texto">
+            <div class="caja-principal">
+                <h2>Título Principal</h2>
+                <p>Contenido de la caja principal.</p>
+            </div>
+            <div class="caja-secundaria">
+                <h2>Título Secundario</h2>
+                <p>Contenido de la caja secundaria.</p>
+            </div>
+            <!-- Agregar sección de Objetivos con un identificador -->
+            <div class="caja-seccion" id="objetivos">
+                <h2>Objetivos</h2>
+                <p>Descripción de los objetivos de tu proyecto.</p>
+            </div>
+            <!-- Agregar sección de Explicación con un identificador -->
+            <div class="caja-seccion" id="explicacion">
+                <h2>Explicación</h2>
+                <p>Explicación detallada de tu proyecto.</p>
+            </div>
+            <!-- Agregar sección de Desafíos con un identificador -->
+            <div class="caja-seccion" id="desafios">
+                <h2>Desafíos</h2>
+                <p>Desafíos que enfrentaste durante la realización de tu proyecto.</p>
+            </div>
+            <!-- Agregar sección de Resultados con un identificador -->
+            <div class="caja-seccion" id="resultados">
+                <h2>Resultados</h2>
+                <p>Presentación de los resultados obtenidos en tu proyecto.</p>
             </div>
         </div>
-    </nav>
-
-    <!-- Imagen principal "Casa" -->
-    <div class="container">
-        <img class="main-image" src="imagenes/Casa.jpg" alt="Casa Domótica - Tecnología para el Hogar">
-    </div>
-
- <div class="container section-1">
-    <h2 id="seccion1">Objetivos</h2>
-    <p>
-        Diseñar un sistema de seguridad para el hogar, la implementación de sistemas inteligentes con la finalidad de administrar recursos y brindar confort a los ocupantes de la vivienda.
-    </p>
-
-    <h3>Objetivo General</h3>
-    <p>
-        Diseñar un sistema integral de seguridad y confort en el hogar mediante la implementación de sistemas inteligentes para la administración eficiente de recursos y la mejora de la calidad de vida de los ocupantes de la vivienda.
-    </p>
-
-    <h3>Objetivos Específicos</h3>
-    <ul>
-        <li>Identificar los dispositivos para el control de potencia a través de una búsqueda de hojas de datos.</li>
-        <li>Diseñar los planos electrónicos mediante herramientas CAD para las conexiones del sistema.</li>
-        <li>Implementar el prototipo parcial para validar el funcionamiento del sistema mediante pruebas controladas.</li>
-        <li>Desarrollar un diagrama de lazo de acuerdo a la normativa ISA 5.4.</li>
-    </ul>
- </div>
-    <div>
-    <!-- Imagen para "Esquema de Conexiones" -->
-    <h2 id="seccion2">Esquema de Conexiones</h2>
-    <img src="imagenes/esquema_conexiones.jpg" alt="Esquema de Conexiones">
-
-    <!-- Imagen para "Esquemático Electrónico" -->
-    <h2 id="seccion3">Esquemático Electrónico</h2>
-    <img src="imagenes/esquematico_electronico.jpg" alt="Esquemático Electrónico">
-
-    <!-- Imagen para "Diagrama Normativa (ISA)" -->
-    <h2 id="seccion4">Diagrama Normativa (ISA)</h2>
-    <img src="imagenes/diagrama_normativa_isa.jpg" alt="Diagrama Normativa (ISA)">
-
-    <h2 id="seccion5">Historia</h2>
-    <p>
-        Desde el inicio de la humanidad, el ser humano ha demostrado su capacidad de adaptación a diversos entornos y su habilidad para modificar su entorno en su propio beneficio. A lo largo del tiempo, hemos pasado de vivir como nómadas a establecernos en viviendas cada vez más sofisticadas y confortables. En las últimas décadas, hemos dado pasos significativos en la búsqueda de una mayor comodidad en nuestras viviendas.
-    </p>
-
-    <h2 id="seccion6">Cumplimiento de Normas ISO</h2>
-    <p>
-        Contamos con las normas ISO 9001 y 14000 con el cual mostramos y damos una calidad alta a nuestro servicio de Casa inteligente y contribuimos con el ahorro eficiente de energía para así ayudar con el medio ambiente y una buena sostenibilidad del hogar. 
-    </p>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-    <script>
-        const searchForm = document.getElementById("search-form");
-        const searchInput = document.getElementById("search-input");
-        const searchResults = document.getElementById("search-results");
-
-        searchForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const query = searchInput.value.toLowerCase();
-            const results = buscarEnPagina(query);
-            mostrarResultadosEnPagina(results);
-        });
-
-        function buscarEnPagina(query) {
-            const resultados = [];
-            const elementos = document.querySelectorAll("h2, p");
-            
-            elementos.forEach((elemento) => {
-                const texto = elemento.textContent.toLowerCase();
-                if (texto.includes(query)) {
-                    resultados.push(elemento);
-                }
-            });
-
-            return resultados;
-        }
-
-        function mostrarResultadosEnPagina(resultados) {
-            searchResults.innerHTML = "";
-            if (resultados.length === 0) {
-                searchResults.innerHTML = "<p>No se encontraron resultados.</p>";
-            } else {
-                resultados.forEach((resultado) => {
-                    const anchor = document.createElement("a");
-                    anchor.href = "#" + resultado.id;
-                    anchor.textContent = resultado.textContent;
-                    anchor.classList.add("result-link");
-                    searchResults.appendChild(anchor);
-                });
-            }
-        }
-    </script>
+        <div class="imagenes">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <!-- Agregar más imágenes si es necesario -->
+        </div>
+    </section>
+    <footer>
+        <p>Derechos de autor © <?php echo date("Y"); ?> Tu Nombre</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
