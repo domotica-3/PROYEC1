@@ -1,167 +1,118 @@
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
+/* Estilos para la barra de navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Añade posición relativa al header */
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
-    background-color: #f8f8f8;
+    display: flex;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de búsqueda mejorados */
+.busqueda {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: absolute; /* Añade posición absoluta al motor de búsqueda */
+    top: 0; /* Lo coloca en la parte superior del header */
+    right: 30px; /* Lo coloca en la parte derecha del header */
+}
+
+.busqueda li {
+    margin-right: 20px;
+}
+
+.busqueda input[type="text"] {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
     color: #333;
-}
-
-.container {
-    max-width: 100%;
-    padding: 20px;
-}
-
-/* Estilos de la barra de navegación */
-.navbar {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.navbar-brand {
-    color: #000;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 5px 20px;
-}
-
-.navbar-toggler-icon {
-    background-color: #000;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-nav .nav-link {
-    color: #000;
     font-size: 16px;
-    padding: 5px 20px;
-    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+    width: 0;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right;
 }
 
-.navbar-nav .nav-link:hover {
-    background-color: transparent;
-    color: #007bff;
-}
-
-/* Estilos para el campo de búsqueda en la barra de navegación */
-.form-inline {
-    margin-left: auto;
-}
-
-.form-control {
+.busqueda button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
     border: none;
-    border-radius: 0;
-    background-color: transparent;
-    color: #000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btn-outline-light {
-    border-color: #000;
-    color: #000;
+.busqueda input[type="text"]:focus {
+    border-color: #777;
+    transform: scaleX(1);
+    width: 200px;
+    opacity: 1;
 }
 
-/* Estilos para la navegación al hacer scroll */
-@media (min-width: 992px) {
-    .navbar.scrolled {
-        background-color: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar.scrolled .navbar-brand,
-    .navbar.scrolled .nav-link,
-    .navbar.scrolled .navbar-toggler-icon {
-        color: #000;
-    }
+.busqueda button:hover {
+    background-color: #777;
 }
 
-/* Estilos específicos para las secciones */
-.section-header {
-    text-align: center;
-    margin-top: 20px;
-    color: #007bff;
-    font-size: 28px;
-    transition: color 0.3s ease-in-out;
-}
-
-.section-content {
-    margin-top: 20px;
-}
-
-/* Fondo de la página de inicio */
-.imagen-casa {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.1;
-}
-
-/* Estilos para secciones */
-.section-1, .section-3, .section-5 {
-    background-color: #fff;
+/* Estilos para la sección de contenido */
+.contenido {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido arriba */
+    justify-content: space-between;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centrar el contenido en la sección */
-    color: #000; /* Cambiar el color del texto en las secciones */
 }
 
-.section-2, .section-4, .section-6 {
-    background-color: #f8f8f8;
+.texto {
+    flex: 1;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #000;
 }
 
-/* Efectos al hacer hover */
-.section-1:hover, .section-3:hover, .section-5:hover,
-.section-2:hover, .section-4:hover, .section-6:hover {
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-/* Estilos para encabezados y párrafos */
-h1 {
-    color: #007bff;
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 20px;
+.caja-principal, .caja-secundaria {
+    background-color: #f4f4f4;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-p {
-    margin-bottom: 20px;
+/* Estilos para la sección de imágenes */
+.imagenes {
+    flex: 1;
+    text-align: center; /* Centra las imágenes horizontalmente */
+    overflow: hidden; /* Oculta las imágenes que exceden el contenedor */
 }
 
-/* Estilos para imágenes */
-img {
+.imagenes img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 20px 0;
+    margin: 10px;
+    transition: transform 0.5s; /* Agrega una transición para las imágenes */
 }
 
-.main-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Estilos para el resultado de la búsqueda */
-#search-results {
-    margin-top: 20px;
-    color: #000;
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
