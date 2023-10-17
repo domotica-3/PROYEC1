@@ -1,4 +1,5 @@
 
+
 /* Estilos para la barra de navegación */
 header {
     background-color: #333;
@@ -7,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: relative; /* Añade posición relativa al header */
 }
 
 nav ul {
@@ -32,9 +33,9 @@ nav a {
     padding: 0;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: 30px;
+    position: absolute; /* Añade posición absoluta al motor de búsqueda */
+    top: 0; /* Lo coloca en la parte superior del header */
+    right: 30px; /* Lo coloca en la parte derecha del header */
 }
 
 .busqueda li {
@@ -80,7 +81,7 @@ nav a {
 /* Estilos para la sección de contenido */
 .contenido {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; /* Alinea el contenido arriba */
     justify-content: space-between;
     padding: 20px;
 }
@@ -90,7 +91,7 @@ nav a {
     padding: 20px;
 }
 
-.caja-principal, .caja-secundaria, .caja-seccion {
+.caja-principal, .caja-secundaria {
     background-color: #f4f4f4;
     padding: 20px;
     margin-bottom: 20px;
@@ -99,15 +100,15 @@ nav a {
 /* Estilos para la sección de imágenes */
 .imagenes {
     flex: 1;
-    text-align: center;
-    overflow: hidden;
+    text-align: center; /* Centra las imágenes horizontalmente */
+    overflow: hidden; /* Oculta las imágenes que exceden el contenedor */
 }
 
 .imagenes img {
     max-width: 100%;
     height: auto;
     margin: 10px;
-    transition: transform 0.5s;
+    transition: transform 0.5s; /* Agrega una transición para las imágenes */
 }
 
 /* Estilos para el pie de página */
@@ -117,3 +118,19 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+
+          
+        </div>
+        <div class="imagenes">
+            <img src="imagenes/Casa.jpg" alt="Imagen 1">
+            <img src="imagenes/diagrama_normativa_isa.jpg" alt="Imagen 2">
+            <!-- Agregar más imágenes si es necesario -->
+        </div>
+    </section>
+    <footer>
+        <p>Derechos de autor © <?php echo date("Y"); ?> Tu Nombre</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
