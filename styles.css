@@ -1,3 +1,4 @@
+
 /* Estilos para la barra de navegación */
 header {
     background-color: #333;
@@ -6,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Añade posición relativa al header */
+    position: relative;
 }
 
 nav ul {
@@ -31,9 +32,9 @@ nav a {
     padding: 0;
     display: flex;
     align-items: center;
-    position: absolute; /* Añade posición absoluta al motor de búsqueda */
-    top: 0; /* Lo coloca en la parte superior del header */
-    right: 30px; /* Lo coloca en la parte derecha del header */
+    position: absolute;
+    top: 0;
+    right: 30px;
 }
 
 .busqueda li {
@@ -79,7 +80,7 @@ nav a {
 /* Estilos para la sección de contenido */
 .contenido {
     display: flex;
-    align-items: flex-start; /* Alinea el contenido arriba */
+    align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
 }
@@ -89,7 +90,7 @@ nav a {
     padding: 20px;
 }
 
-.caja-principal, .caja-secundaria {
+.caja-principal, .caja-secundaria, .caja-seccion {
     background-color: #f4f4f4;
     padding: 20px;
     margin-bottom: 20px;
@@ -98,15 +99,15 @@ nav a {
 /* Estilos para la sección de imágenes */
 .imagenes {
     flex: 1;
-    text-align: center; /* Centra las imágenes horizontalmente */
-    overflow: hidden; /* Oculta las imágenes que exceden el contenedor */
+    text-align: center;
+    overflow: hidden;
 }
 
 .imagenes img {
     max-width: 100%;
     height: auto;
     margin: 10px;
-    transition: transform 0.5s; /* Agrega una transición para las imágenes */
+    transition: transform 0.5s;
 }
 
 /* Estilos para el pie de página */
