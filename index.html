@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <title>Casa Inteligente</title>
+    <link rel="icon" href="imagenes/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#objetivos">Objetivos</a></li>
-                <li><a href="#explicacion">Explicación</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#domotica">Qué es la Domótica</a></li>
+                <li><a href="#antecedentes">Antecedentes</a></li>
+                <li><a href="#estado-arte">Estado del Arte</a></li>
+                <li><a href="#componentes">Componentes Utilizados</a></li>
+                <li><a href="#sensores">Sensores Utilizados</a></li>
+                <li><a href="#funcionamiento-sensores">Funcionamiento de Sensores Analógicos</a></li>
+                <li><a href="#sistemas-control">Sistemas de Control y Alarma</a></li>
+                <li><a href="#normatividad">Normatividad</a></li>
                 <li><a href="#desafios">Desafíos</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <ul class="busqueda">
                 <li>
@@ -27,99 +33,70 @@
             </ul>
         </nav>
     </header>
-    <section class="contenido">
-        <div class="texto">
-            <div class="caja-principal">
-                <h2>La Casa del Futuro</h2>
-                <p>En nuestro proyecto de domótica, hemos desarrollado una Casa Inteligente utilizando tarjetas embebidas como ESP32, Arduino y gran variedad de sensores. Lo que permite un control completo a través de Internet desde dispositivos móviles o computadoras. Destacamos aspectos técnicos clave, como el ESP32, los relés electrónicos, bombillos LED de alto rendimiento y los componentes electrónicos que respaldan la seguridad y la eficiencia del sistema.
-                </p>
-            </div>
-              <div class="caja-secundaria">
-                <h2>Introducción: Proyecto Casa domotica</h2>
-                <p>En un mundo donde la tecnología avanza a pasos agigantados, la automatización del hogar se ha convertido en una manifestación tangible de la convergencia de la ingeniería mecatrónica y el estilo de vida moderno. Este proyecto marca el amanecer de la Casa Inteligente, donde la ingeniería se encuentra con la comodidad y la eficiencia para ofrecer una experiencia de vida sin precedentes.</p>
-            </div>
-            <!-- Agregar sección de Objetivos con un identificador -->
-            <div class="caja-seccion" id="objetivos">
-                <h2>Objetvio General</h2>
-                <p>El objetivo general de este proyecto es desarrollar e implementar una solución de automatización residencial que tenga un enfoque primordial en la mejora de la seguridad de las viviendas. A través de la integración de  sistemas Electronicos, buscamos proporcionar a los propietarios de viviendas un control más efectivo y conveniente sobre la seguridad en sus hogares, reduciendo los riesgos y brindando una mayor tranquilidad en su entorno residencial.</p>
-            </div>
-            <!-- Agregar sección de Explicación con un identificador -->
-            <div class="caja-seccion" id="explicacion">
-                <h2>Explicación</h2>
-                <p>Explicación detallada de tu proyecto.</p>
-            </div>
-            <!-- Agregar sección de Desafíos con un identificador -->
-            <div class="caja-seccion" id="desafios">
-                <h2>Desafíos</h2>
-                <p>Desafíos que enfrentaste durante la realización de tu proyecto.</p>
-            </div>
-            <!-- Agregar sección de Resultados con un identificador -->
-            <div class="caja-seccion" id="resultados">
-                <h2>Resultados</h2>
-                <p>Presentación de los resultados obtenidos en tu proyecto.</p>
-            </div>
-// Sección de "Qué es la Domótica"
-echo '<section id="domotica">';
-echo '<h2>Qué es la Domótica</h2>';
-echo '<p>Comienza tu presentación introduciendo el concepto de domótica y explicando en qué consiste. Esto proporcionará un contexto general antes de adentrarse en los detalles de su proyecto.</p>';
-echo '</section>';
-
-// Sección de "Antecedentes"
-echo '<section id="antecedentes">';
-echo '<h2>Antecedentes</h2>';
-echo '<p>A continuación, presenta los antecedentes que llevaron al desarrollo de la domótica y cómo ha evolucionado a lo largo del tiempo.</p>';
-echo '</section>';
-
-// Sección de "Estado del Arte"
-echo '<section id="estado-arte">';
-echo '<h2>Estado del Arte</h2>';
-echo '<p>Explora el estado actual de la domótica, destacando las tendencias y tecnologías más recientes en el campo. Esto ayudará a contextualizar tu proyecto en el panorama actual.</p>';
-echo '</section>';
-
-// Sección de "Componentes Utilizados"
-echo '<section id="componentes">';
-echo '<h2>Componentes Utilizados</h2>';
-echo '<p>Describe los componentes específicos que has utilizado en tu proyecto de domótica, como el ESP32, Arduino y otros elementos fundamentales.</p>';
-echo '</section>';
-
-// Sección de "Sensores Utilizados"
-echo '<section id="sensores">';
-echo '<h2>Sensores Utilizados</h2>';
-echo '<p>Explica los sensores que integras en tu proyecto, detallando su funcionamiento y su relevancia en la automatización residencial.</p>';
-echo '</section>';
-
-// Sección de "Funcionamiento Interno de Sensores Analógicos (Estado del Arte)"
-echo '<section id="funcionamiento-sensores">';
-echo '<h2>Funcionamiento Interno de Sensores Analógicos (Estado del Arte)</h2>';
-echo '<p>Profundiza en el funcionamiento interno de los sensores analógicos y cómo contribuye a la domótica. Esto proporcionará información técnica esencial.</p>';
-echo '</section>';
-
-// Sección de "Sistemas de Control y Alarma (Estado del Arte)"
-echo '<section id="sistemas-control">';
-echo '<h2>Sistemas de Control y Alarma (Estado del Arte)</h2>';
-echo '<p>Continúa explorando sistemas de control y alarmas relacionados con la domótica y cómo se aplican en la seguridad y automatización de viviendas.</p>';
-echo '</section>';
-
-// Sección de "Normatividad"
-echo '<section id="normatividad">';
-echo '<h2>Normatividad</h2>';
-echo '<p>Habla sobre las regulaciones y normativas que pueden ser relevantes para la implementación de sistemas de domótica en viviendas. Esto es importante para garantizar la conformidad y seguridad.</p>';
-echo '</section>';
-
-// Sección de "Desafíos"
-echo '<section id="desafios">';
-echo '<h2>Desafíos</h2>';
-echo '<p>Concluye presentando los desafíos que enfrentaste en la realización de tu proyecto y cómo los abordaste. Esto destacará tu capacidad para superar obstáculos.</p>';
-echo '</section>';
-?>
-          
-        </div>
-        <div class="imagenes">
-            <img src="imagenes/Casa.jpg" alt="Imagen 1">
-            <img src="imagenes/diagrama_normativa_isa.jpg" alt="Imagen 2">
-            <!-- Agregar más imágenes si es necesario -->
-        </div>
+    <section id="inicio" class="contenido">
+        <!-- Tu contenido actual de la sección de inicio -->
     </section>
+
+    <!-- Sección de "Qué es la Domótica" -->
+    <section id="domotica" class="contenido">
+        <h2>Qué es la Domótica</h2>
+        <p>Comienza tu presentación introduciendo el concepto de domótica y explicando en qué consiste. Esto proporcionará un contexto general antes de adentrarse en los detalles de tu proyecto.</p>
+    </section>
+
+    <!-- Sección de "Antecedentes" -->
+    <section id="antecedentes" class="contenido">
+        <h2>Antecedentes</h2>
+        <p>A continuación, presenta los antecedentes que llevaron al desarrollo de la domótica y cómo ha evolucionado a lo largo del tiempo.</p>
+    </section>
+
+    <!-- Sección de "Estado del Arte" -->
+    <section id="estado-arte" class="contenido">
+        <h2>Estado del Arte</h2>
+        <p>Explora el estado actual de la domótica, destacando las tendencias y tecnologías más recientes en el campo. Esto ayudará a contextualizar tu proyecto en el panorama actual.</p>
+    </section>
+
+    <!-- Sección de "Componentes Utilizados" -->
+    <section id="componentes" class="contenido">
+        <h2>Componentes Utilizados</h2>
+        <p>Describe los componentes específicos que has utilizado en tu proyecto de domótica, como el ESP32, Arduino y otros elementos fundamentales.</p>
+    </section>
+
+    <!-- Sección de "Sensores Utilizados" -->
+    <section id="sensores" class="contenido">
+        <h2>Sensores Utilizados</h2>
+        <p>Explica los sensores que integras en tu proyecto, detallando su funcionamiento y su relevancia en la automatización residencial.</p>
+    </section>
+
+    <!-- Sección de "Funcionamiento Interno de Sensores Analógicos" -->
+    <section id="funcionamiento-sensores" class="contenido">
+        <h2>Funcionamiento Interno de Sensores Analógicos</h2>
+        <p>Profundiza en el funcionamiento interno de los sensores analógicos y cómo contribuye a la domótica. Esto proporcionará información técnica esencial.</p>
+    </section>
+
+    <!-- Sección de "Sistemas de Control y Alarma" -->
+    <section id="sistemas-control" class="contenido">
+        <h2>Sistemas de Control y Alarma</h2>
+        <p>Continúa explorando sistemas de control y alarmas relacionados con la domótica y cómo se aplican en la seguridad y automatización de viviendas.</p>
+    </section>
+
+    <!-- Sección de "Normatividad" -->
+    <section id="normatividad" class="contenido">
+        <h2>Normatividad</h2>
+        <p>Habla sobre las regulaciones y normativas que pueden ser relevantes para la implementación de sistemas de domótica en viviendas. Esto es importante para garantizar la conformidad y seguridad.</p>
+    </section>
+
+    <!-- Sección de "Desafíos" -->
+    <section id="desafios" class="contenido">
+        <h2>Desafíos</h2>
+        <p>Concluye presentando los desafíos que enfrentaste en la realización de tu proyecto y cómo los abordaste. Esto destacará tu capacidad para superar obstáculos.</p>
+    </section>
+
+    <!-- Sección de "Contacto" -->
+    <section id="contacto" class="contenido">
+        <h2>Contacto</h2>
+        <p>Si deseas obtener más información sobre nuestro proyecto de Casa Inteligente o tienes alguna pregunta, no dudes en contactarnos. Estamos disponibles para responder a tus consultas.</p>
+    </section>
+
     <footer>
         <p>Derechos de autor © <?php echo date("Y"); ?> Tu Nombre</p>
     </footer>
