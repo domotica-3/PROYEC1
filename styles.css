@@ -24,7 +24,7 @@ body {
 
 .image-box {
     width: 40%; /* El 40% del ancho de la página */
-    background: url('imagenes/fondo 2.jpg'); /* Fondo de imagen para el cuadro de imagen */
+    background: url('imagenes/fondo_2.jpg'); /* Fondo de imagen para el cuadro de imagen */
     background-size: cover;
     /* Puedes agregar más estilos según sea necesario */
 }
