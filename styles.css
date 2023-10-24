@@ -1,8 +1,3 @@
-hola, toma el roll de experto en programación php, css y js, Quiero que expliques las dimensiones en pixeles  que se deben tener para poder crear una pagina web 
-
- QUIERO TENER una pagina de inicio que cuente con; un cuadro en la parte superior que ocupe todo de derecha a izquierda en cual se ubique una barra de navegación, abajo de esto  sin saltar de pagina una cuadro que ocupe el restante de la pagina que se divida en dos  un cuadro de texto y uno de imagen(imagen/Fondo),  el de texto ocupe el 60% de la parte de texto como de acho y largo y el cuadro donde va la imagen el otro 40% , el texto debe contar con dos cajas de texto, una del titulo principal en AZUL y la otra DESCRICCION DEL TITULO en blanco
-
-
 body {
     margin: 0;
     padding: 0;
