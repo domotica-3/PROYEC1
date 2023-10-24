@@ -85,7 +85,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('imagenes/imagen_1.jpeg'); /* Añadida imagen 1 */
+    background-image: url('imagenes/imagen_1.png'); /* Añadida imagen 1 */
 }
 
 .image-box-antecedente2 {
@@ -93,7 +93,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('imagenes/imagen_2.jpg'); /* Añadida imagen 2 */
+    background-image: url('imagenes/imagen_2.png'); /* Añadida imagen 2 */
 }
 
 .content + .content {
