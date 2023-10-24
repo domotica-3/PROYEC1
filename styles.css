@@ -78,6 +78,24 @@ body {
     color: #fff;
 }
 
+/* Resto del CSS no se modifica */
+
+.image-box-antecedente1 {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('imagenes/imagen_1.png'); /* Añadida imagen 1 */
+}
+
+.image-box-antecedente2 {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('imagenes/imagen_2.png'); /* Añadida imagen 2 */
+}
+
 .content + .content {
     margin-top: 1px;
 }
