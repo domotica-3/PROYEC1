@@ -6,72 +6,78 @@ body {
 }
 
 .navbar-space {
-    height: 40px; /* Espacio en blanco antes de la barra de navegación */
+    height: 40px;
 }
 
 .navbar {
     background-color: #333;
     width: 100%;
     height: 50px;
-    position: fixed; /* La barra de navegación se mantendrá fija en su posición */
-    top: 40px; /* Posiciona la barra de navegación después del espacio en blanco */
-    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    position: fixed;
+    top: 40px;
+    z-index: 1000;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Distribuye los elementos de la lista de forma horizontal */
-    justify-content: start; /* Alinea los elementos al inicio */
+    display: flex;
+    justify-content: start;
 }
 
 .navbar li {
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
+    margin-right: 20px;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px; /* Espaciado alrededor del texto de los enlaces */
+    padding: 10px 20px;
     display: inline-block;
 }
 
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .content {
     display: flex;
+    align-items: stretch; /* Asegura que ambos bloques (texto e imagen) tengan la misma altura */
 }
 
 .text-box {
-    width: 60%; /* El 60% del ancho de la página */
-    /*background: url('imagenes/Fondo.jpg'); /* Fondo de imagen para el cuadro de texto */
-    /*background-size: cover;*/
+    width: 60%;
     background-color: rgba( 27, 40, 56 , 0.9);
     padding: 20px;
+    display: flex; /* Lo convertimos en flex para manejar el contenido verticalmente */
+    flex-direction: column; /* Distribuye el contenido verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.image-box, .image-box-domotica {
+    width: 40%;
+    background-size: cover;
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
 }
 
 .image-box {
-    width: 40%; /* El 40% del ancho de la página */
-    background: url('imagenes/fondo_2.png'); /* Fondo de imagen para el cuadro de imagen */
-    background-size: cover;
-    /* Puedes agregar más estilos según sea necesario */
+    background-image: url('imagenes/fondo_2.png');
+}
+
+.image-box-domotica {
+    background-image: url('imagenes/fondo_3.png');
 }
 
 .title {
-    color: blue; /* Color del título principal (azul) */
+    color: blue;
 }
 
 .description {
-    color: #fff; /* Color del texto de descripción (blanco) */
+    color: #fff;
 }
 
-/* ... [Estilos anteriores no modificados] ... */
-
-.image-box-domotica {
-    width: 40%;
-    background: url('imagenes/fondo_3.png') center/cover;
-}.content + .content {
+.content + .content {
     margin-top: 1px;
 }
