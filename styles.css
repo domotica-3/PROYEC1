@@ -17,8 +17,9 @@ body {
 
 .text-box {
     width: 60%; /* El 60% del ancho de la página */
-    background: url('imagenes/Fondo.jpg'); /* Fondo de imagen para el cuadro de texto */
-    background-size: cover;
+    /*background: url('imagenes/Fondo.jpg'); /* Fondo de imagen para el cuadro de texto */
+    /*background-size: cover;*/
+    background-color: rgba( 73, 71, 70 , 0.4);
     padding: 20px;
 }
 
