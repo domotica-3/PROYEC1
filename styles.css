@@ -43,23 +43,23 @@ body {
 
 .content {
     display: flex;
-    align-items: stretch; /* Asegura que ambos bloques (texto e imagen) tengan la misma altura */
+    align-items: stretch; 
 }
 
 .text-box {
     width: 60%;
-    background-color: rgba( 27, 40, 56 , 0.9);
+    background-color: rgba(27, 40, 56, 0.9);
     padding: 20px;
-    display: flex; /* Lo convertimos en flex para manejar el contenido verticalmente */
-    flex-direction: column; /* Distribuye el contenido verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .image-box, .image-box-domotica {
     width: 40%;
     background-size: cover;
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .image-box {
@@ -76,16 +76,15 @@ body {
 
 .description {
     color: #fff;
+    margin-bottom: 20px;
 }
-
-/* Resto del CSS no se modifica */
 
 .image-box-antecedente1 {
     width: 40%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('imagenes/imagen_1.png'); /* Añadida imagen 1 */
+    background-image: url('imagenes/imagen_1.png'); 
 }
 
 .image-box-antecedente2 {
@@ -93,7 +92,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('imagenes/imagen_2.png'); /* Añadida imagen 2 */
+    background-image: url('imagenes/imagen_2.png'); 
+}
+
+.references {
+    color: #fff;
+    margin-top: 20px; 
+    font-size: 35.7px;
 }
 
 .content + .content {
