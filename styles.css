@@ -13,7 +13,6 @@ body {
 
 .content {
     display: flex;
-    display-content:column;
 }
 
 .text-box {
