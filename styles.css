@@ -37,3 +37,25 @@ body {
 .description {
     color: #fff; /* Color del texto de descripción (blanco) */
 }
+
+/* ... [Estilos anteriores no modificados] ... */
+
+.image-box-domotica {
+    width: 40%;
+    background: url('imagenes/fondo_3.png') center/cover;
+}
+
+/* Estilo para los enlaces activos en la barra de navegación */
+.navbar a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para los enlaces en hover en la barra de navegación */
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Espaciado adicional entre las secciones para mejor visualización */
+.content + .content {
+    margin-top: 1px;
+}
