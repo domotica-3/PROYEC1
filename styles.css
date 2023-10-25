@@ -119,9 +119,6 @@ body {
     border: 1px solid #ddd;
 }
 
-
-
-
 /* Sección Material Utilizado */
 .material-utilizado {
     padding: 2rem 0;
@@ -143,6 +140,7 @@ body {
     margin: 0 auto; /* Centrar el contenedor en la página */
     padding: 20px; /* Espaciado interno del contenedor */
 }
+
 
 .sensor-item {
     border: 1px solid #ddd; /* Borde claro para las cajas de sensores */
@@ -172,71 +170,61 @@ body {
     margin-bottom: 10px; /* Espaciado entre título y descripción del sensor */
 }
 
-/* Estilo general para la sección */
+/* Estilos para la sección "Funcionamiento Interno de Sensores Analógicos" */
+
+
+
 #analog-sensors-functioning {
-    background: (27, 40, 56, 0.8); /* Manteniendo el fondo original */
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    width: 100%;
+    background-color: rgba(27, 40, 56, 0.8); /* Temperatura de 0.8 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e6e6e6; /* Un color más claro para mejorar la legibilidad en el fondo oscuro */
 }
 
-/* Estilo para el encabezado principal */
+#analog-sensors-functioning h2, #analog-sensors-functioning h3 {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente para títulos */
+    border-radius: 10px; /* Puntas redondas para los títulos */
+    padding: 10px 15px; /* Padding alrededor de los títulos */
+    display: inline-block; /* Para que el fondo solo cubra el texto y no toda la línea */
+}
+
 #analog-sensors-functioning h2 {
-    font-size: 2rem;
-    color: #2C3E50;
-    border-bottom: 2px solid #3498DB;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    text-align: center; /* Centrado del título */
+    color: #66aaff; /* Un tono de azul más suave para títulos */
+    margin-bottom: 20px; /* Espaciado entre el título y el contenido */
 }
 
-/* Estilo para los subencabezados */
 #analog-sensors-functioning h3 {
-    font-size: 1.5rem;
-    color: #2980B9;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    font-weight: bold;
+    color: #d1d1d1; /* Un color más claro para sub-títulos */
+    margin-top: 20px; /* Espaciado superior para los sub-títulos */
+    margin-bottom: 10px; /* Espaciado inferior para los sub-títulos */
 }
 
-/* Estilo para los párrafos */
 #analog-sensors-functioning p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-align: justify;
+    margin-bottom: 15px; /* Espaciado entre párrafos */
 }
 
-/* Estilo para las imágenes */
 #analog-sensors-functioning img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 15px auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espaciado superior para las imágenes */
+    margin-bottom: 20px; /* Espaciado inferior para las imágenes */
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    border-radius: 8px; /* Agregando esquinas redondeadas a las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un poco de profundidad a las imágenes */
 }
 
-/* Estilo para las fórmulas (si utilizas algún plugin o framework para mostrarlas) */
-#analog-sensors-functioning p[role="formula"] {
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2rem;
+/* Estilo para las formulas */
+#analog-sensors-functioning p formula {
+    display: block; /* Las fórmulas se muestran en su propia línea */
+    text-align: center; /* Centrar las fórmulas */
+    margin-top: 10px; /* Espaciado superior para las fórmulas */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para las fórmulas */
+    padding: 10px; /* Padding alrededor de las fórmulas */
+    border-radius: 4px; /* Esquinas redondeadas para el fondo de las fórmulas */
 }
-
-/* Estilo para enlaces, si los hay */
-#analog-sensors-functioning a {
-    color: #3498DB;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#analog-sensors-functioning a:hover {
-    color: #2980B9;
-}
-
 
 .content + .content {
     margin-top: 1px;
