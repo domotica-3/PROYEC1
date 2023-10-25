@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Barlow', sans-serif;
     font-size: 41.9px;
+    background-color: #f7f7f7; /* Fondo claro para mejorar el contraste con los cuadros de texto */
 }
 
 .navbar-space {
@@ -35,7 +36,7 @@ body {
     text-decoration: none;
     padding: 1px 2px;
     display: inline-block;
-    transition: background-color 0.3s ease; /* Suavizar el efecto hover */
+    transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
@@ -50,21 +51,21 @@ body {
     padding: 0px;
 }
 
-
-.text-box {
+.text-box, #estadoDelArte .text-box {
     width: 60%;
-    background-color: rgba(27, 40, 56, 0.9);
+    background-color: rgba(27, 40, 56, 0.8); /* Temperatura de 0.8 */
     padding: 20px;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e6e6e6; /* Un color más claro para mejorar la legibilidad en el fondo oscuro */
 }
 
-.image-box, .image-box-domotica {
+.image-box, .image-box-domotica, .image-box-antecedente1, .image-box-antecedente2, #estadoDelArte .image-box {
     width: 40%;
     background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .image-box {
@@ -75,78 +76,40 @@ body {
     background-image: url('imagenes/fondo_3.png');
 }
 
-.title {
-    color: blue;
+.title, #estadoDelArte .title {
+    color: #66aaff; /* Un tono de azul más suave */
 }
 
-.description {
-    color: #fff;
+.description, #estadoDelArte .description {
     margin-bottom: 20px;
 }
 
 .image-box-antecedente1 {
-    width: 40%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('imagenes/imagen_1.png'); 
+    background-image: url('imagenes/imagen_1.png');
 }
 
 .image-box-antecedente2 {
-    width: 40%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('imagenes/imagen_2.png'); 
+    background-image: url('imagenes/imagen_2.png');
 }
 
-.references {
-    color: #fff;
-    margin-top: 20px; 
-    font-size: 35.7px;
-}
-
-
-#estadoDelArte .text-box, .image-box {
-    box-sizing: border-box;
-    width: 48%; /* Asigna un ancho del 48% a cada caja para dejar un pequeño espacio entre ellas. */
+.references, #estadoDelArte .description sup {
+    color: #a3a3a3; /* Un color más claro para las referencias y notas al pie */
 }
 
 #estadoDelArte .title {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333;
-}
-
-#estadoDelArte .description {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #555;
 }
 
 #estadoDelArte .description strong {
     font-weight: bold;
-    color: #222;
+    color: #d1d1d1; /* Un color más claro para el texto en negrita */
 }
 
 #estadoDelArte .image-box {
-    background-size: cover;
-    background-position: center;
-    min-height: 50px; /* Puedes ajustar la altura según lo que prefieras. */
-    border: 1px solid #ddd; /* Borde para visualizar el espacio en caso de que no haya imagen. */
-}
-
-/* Estilo para las referencias */
-#estadoDelArte .description sup {
-    font-size: 12px;
-    color: #999;
-    vertical-align: super;
-    margin-left: 3px;
-}
-
-#estadodelarte .image-box {
-    background-image: url('imagenes/imagen_4.jpg');
+    min-height: 50px;
+    border: 1px solid #ddd;
 }
 
 .content + .content {
