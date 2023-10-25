@@ -125,35 +125,51 @@ body {
 /* Sección Material Utilizado */
 .material-utilizado {
     padding: 2rem 0;
-    background-color: rgba(27, 40, 56, 0.8);
-    color: #e6e6e6;
+    background-color: rgba(27, 40, 56, 0.8); /* Fondo oscuro con transparencia, similar a las otras secciones */
+    color: #e6e6e6; /* Color de texto claro para mejor contraste con el fondo oscuro */
 }
 
 .material-utilizado h1 {
-    text-align: center;
-    color: #66aaff;
-    margin-bottom: 10px;
+    text-align: center; /* Centrado de títulos */
+    color: #66aaff; /* Un tono de azul más suave para títulos */
+    margin-bottom: 10px; /* Espaciado entre títulos y contenido */
 }
 
-
-.content[id="Material"] {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espaciado entre cajas */
+    max-width: 1200px; /* Ancho máximo para contener los ítems */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno del contenedor */
 }
-
-
 
 .sensor-item {
+    border: 1px solid #ddd; /* Borde claro para las cajas de sensores */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border: 1px solid #ddd;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para las cajas de sensores */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
 }
+
 .sensor-item:hover {
     transform: scale(1.05); /* Efecto de "zoom" al pasar el cursor sobre la caja */
+}
+
+.sensor-item img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho de la caja */
+    height: auto;
+}
+
+.sensor-item h3 {
+    font-weight: bold;
+    color: #66aaff; /* Un tono de azul más suave para los títulos de sensores */
+    margin-bottom: 10px; /* Espaciado entre título y descripción del sensor */
 }
 
 
