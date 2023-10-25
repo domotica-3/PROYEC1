@@ -43,8 +43,12 @@ body {
 
 .content {
     display: flex;
-    align-items: stretch; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
 }
+
 
 .text-box {
     width: 60%;
@@ -99,6 +103,49 @@ body {
     color: #fff;
     margin-top: 20px; 
     font-size: 35.7px;
+}
+
+
+#estadoDelArte .text-box, .image-box {
+    box-sizing: border-box;
+    width: 48%; /* Asigna un ancho del 48% a cada caja para dejar un pequeño espacio entre ellas. */
+}
+
+#estadoDelArte .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#estadoDelArte .description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+#estadoDelArte .description strong {
+    font-weight: bold;
+    color: #222;
+}
+
+#estadoDelArte .image-box {
+    background-size: cover;
+    background-position: center;
+    min-height: 300px; /* Puedes ajustar la altura según lo que prefieras. */
+    border: 1px solid #ddd; /* Borde para visualizar el espacio en caso de que no haya imagen. */
+}
+
+/* Estilo para las referencias */
+#estadoDelArte .description sup {
+    font-size: 12px;
+    color: #999;
+    vertical-align: super;
+    margin-left: 3px;
+}
+
+#estadodelarte .image-box {
+    background-image: url('imagenes/imagen_4.jpg');
 }
 
 .content + .content {
