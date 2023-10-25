@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
     <!-- Agregando librería de íconos para mejorar la visual -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 </head>
 
 <body>
@@ -174,8 +178,40 @@
     </div>
 </section>
   
-    <!-- Pie de página -->
-    <footer>
+  <!-- /* Fun SENSORES */ -->
+<!-- /* Fun SENSORES */ -->
+<div class="content intro" id="analog-sensors-functioning">
+
+<section id="analog-sensors-functioning">
+    <h2>Funcionamiento Interno de Sensores Analógicos</h2>
+    
+    <p>Los sensores analógicos desempeñan un papel crucial en sistemas domóticos, proporcionando información esencial del entorno que luego se puede utilizar para controlar otros dispositivos. Aquí se explican algunos aspectos clave del funcionamiento de los sensores analógicos, centrándose en la resolución, la escalización y la aplicación de la fórmula de la pendiente en la escalización:</p>
+    
+    <h3>Resolución:</h3>
+    <p>La resolución de un sensor se refiere a la menor variación en la magnitud medida que el sensor puede detectar. La resolución de un sensor con una salida digital suele ser la resolución numérica de la salida digital.</p>
+    
+    <h3>Escalización:</h3>
+    <p>La escalización es el proceso de convertir la salida cruda de un sensor analógico en una unidad de medida comprensible. Por ejemplo, si un sensor proporciona una salida de voltaje, la escalización ayudaría a convertir ese voltaje en grados Celsius o Fahrenheit.</p>
+    
+    <img src="imagenes/grafica_pendiente" alt="Gráfica de Pendiente" style="max-width:100%; height:auto; margin:2rem 0;">
+    
+    <h3>Aplicación de la Fórmula de la Pendiente:</h3>
+    <p>La fórmula de la pendiente \( m = \frac{(Y2 - Y1)}{(X2 - X1)} \) se utiliza para determinar el factor de escala en la escalización. Por ejemplo, en un sensor con una salida de 0 a 10V DC para una gama de 0 a 100 ft WC, se pueden utilizar dos puntos de la curva de respuesta del sensor (0, 0) y (10, 100) para calcular el factor de escala o \( m \):</p>
+    <p>\[ m = \frac{(100 - 0)}{(10 - 0)} = 10 \]</p>
+    <p>Esta relación lineal entre la salida del sensor y la magnitud medida permite escalar la salida del sensor a una unidad de medida comprensible.</p>
+    
+    <img src="imagenes/grafica_recta" alt="Gráfica de Recta" style="max-width:100%; height:auto; margin:2rem 0;">
+    
+    <h3>Ejemplos Prácticos de Escalización:</h3>
+    <p>En la práctica, la escalización se realiza programando una ecuación de escalización en un Controlador Lógico Programable (PLC) para que, por ejemplo, una corriente de 4 mA se registre como 0 GPM (Gallons Per Minute), y una corriente de 20 mA se registre como 700 GPM. Los valores crudos proporcionados por el conversor analógico a digital (ADC) del sensor se utilizan para definir el dominio de esta escala lineal.</p>
+    
+    <h3>Escalización de Señales Analógicas:</h3>
+    <p>La escalización de una señal de entrada analógica no siempre es sencilla. Por ejemplo, en un diseño de cadena de señal reciente que necesitaba escalar una señal de +/-10 V a un rango de 0 a 2.5 V para coincidir con todas las demás señales dirigidas al conversor analógico a digital (ADC), se tuvieron que considerar varios aspectos para lograr una escalización precisa.</p>
+    
+    <p>Estas explicaciones proporcionan una comprensión clara sobre cómo los sensores analógicos funcionan y cómo la resolución y la escalización son aspectos cruciales para interpretar y utilizar la información proporcionada por estos sensores en aplicaciones de domótica.</p>
+</section>
+</div>
+  <footer>
         <div class="footer-content">
             <p>&copy; 2023 - Proyecto Casa Domótica por [Anderson Felipe Cantor, Jhon Gutierrez]. Universidad [de San Buenaventura].</p>
             <p>Contacto: <a href="mailto:afcantorr@academia.usbbog.edu.co">afcantorr@academia.usbbog.edu.co</a></p>
