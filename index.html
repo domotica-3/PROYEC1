@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
-<head><meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Casa Domótica</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Importación de la fuente Barlow desde Google Fonts (si es la que estás usando) -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Agregando librería de íconos para mejorar la visual -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <!-- Navbar con efecto sticky -->
     <div class="navbar-space"></div>
-    <div class="navbar">
+    <div class="navbar sticky">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#domotica">Domótica</a></li>
-            <li><a href="#antecedente">Antecedente</a></li>e
+            <li><a href="#antecedente">Antecedente</a></li>
             <li><a href="#estadoDelArte">Estado del Arte</a></li>
             <!-- Otros elementos de navegación -->
         </ul>
     </div>
-    
+
     <!-- Sección Inicio -->
-    <div class="content">
+    <div class="content intro">
         <div class="text-box">
             <h1 class="title">Proyecto Casa Domótica</h1>
             <p class="description">Introducción al concepto de domótica y su aplicación en la automatización de viviendas utilizando ESP32, Arduino, sensores y sistemas de control y alarma.</p>
@@ -54,28 +57,19 @@
                 La domótica, un campo en rápido crecimiento, está transformando cómo interactuamos con nuestros espacios de vida y trabajo, y Colombia no es ajena a esta revolución...
                 [1][2][3]. Este contexto histórico sienta las bases para nuestro proyecto: Proyecto Casa Domótica.
             </p>
-            <p class="description">
-                Como estudiante de Tecnología en Automatización, veo una oportunidad invaluable para contribuir al crecimiento...
-                y sostenible.
-            </p>
-            <p class="description">
-                La propuesta se centra en diseñar e implementar un sistema domótico robusto...
-                en el entorno doméstico.
-            </p>
-            <p class="description">
-                El amplio acceso a la tecnología en Colombia, incluso en estratos socioeconómicos más bajos, hace...
-                residencial a nuevos horizontes.
-            </p>
+            <!-- Continúa el texto -->
         </div>
         <div class="image-box-antecedente2">
             <!-- Imagen 2 -->
         </div>
         <p class="references">
-            Referencias:<br>
-            Especialistas en Domótica. "Revolucionando el Futuro: Cómo la Domótica Está Transformando el Mundo." especialistasendomotica.com.<br>
-            Portafolio. "Domótica, la nueva tendencia de compra de vivienda en Colombia." www.portafolio.co.<br>
-            VirtualPro. "Domótica en Colombia, automatización al alcance de todos." www.virtualpro.co.
+            <!-- Referencias -->
         </p>
+    </div>
+
+    <!-- Sección Estado del Arte -->
+    <div id="estadoDelArte" class="content">
+        <!-- Texto y descripciones -->
     </div>
 <!-- Sección Estado del Arte -->
 <div id="estadoDelArte" class="content">
@@ -134,7 +128,55 @@
         <!-- background-image: url('ruta-de-tu-imagen.jpg'); -->
     </div>
 </div>
+   <!-- Sección Material Utilizado -->
+<section class="material-utilizado">
+    <h1>Material Utilizado</h1>
+    <h2>Sensores Implementados</h2>
 
+    <div class="content" id="Material">
+        <div class="sensor-item" data-associated-id="Material">
+            <h3>Sensores de Temperatura</h3>
+            <img src="ruta_imagen_temperatura.jpg" alt="Imagen Sensor de Temperatura">
+            <p>Descripción del sensor de temperatura.</p>
+        </div>
+        <div class="sensor-item" data-associated-id="Material">
+            <h3>Sensores de Movimiento</h3>
+            <img src="ruta_imagen_movimiento.jpg" alt="Imagen Sensor de Movimiento">
+            <p>Descripción del sensor de movimiento.</p>
+        </div>
+        <div class="sensor-item" data-associated-id="Material">
+            <h3>Sensores de Humedad</h3>
+            <img src="ruta_imagen_humedad.jpg" alt="Imagen Sensor de Humedad">
+            <p>Descripción del sensor de humedad.</p>
+        </div>
+        <div class="sensor-item" data-associated-id="Material">
+            <h3>Sensor MQ-06</h3>
+            <img src="ruta_imagen_mq06.jpg" alt="Imagen Sensor MQ-06">
+            <p>Descripción del sensor MQ-06.</p>
+        </div>
+        <div class="sensor-item" data-associated-id="Material">
+            <h3>Foto-Sensores</h3>
+            <img src="ruta_imagen_fotosensores.jpg" alt="Imagen Foto Sensores">
+            <p>Descripción de los foto sensores.</p>
+            </div>
+      
+       <div class="sensor-item" data-associated-id="Material">
+            <h3>Otros-Sensores</h3>
+            <img src="ruta_imagen_fotosensores.jpg" alt="Imagen Foto Sensores">
+            <p>Descripción de los foto sensores.</p>
+            </div>
+    </div>
+</section>
+  
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 - Proyecto Casa Domótica por [Anderson Felipe Cantor, Jhon Gutierrez]. Universidad [de San Buenaventura].</p>
+            <p>Contacto: <a href="mailto:afcantorr@academia.usbbog.edu.co">afcantorr@academia.usbbog.edu.co</a></p>
+        </div>
+    </footer>
+  
+  
 </body>
 
 </html>
