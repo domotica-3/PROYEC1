@@ -1,1 +1,31 @@
+/* section.css */
+@import 'styles.css';
+
+.navbar-space {
+    height: 60px;
+}
+
+.navbar {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ... y otros estilos específicos de la sección ... */
+
+/* Sección Material Utilizado */
+.material-utilizado {
+    padding: 2rem 0;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+}
+
+.material-utilizado h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* ... y así sucesivamente para otras secciones ... */
 
