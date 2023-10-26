@@ -1,255 +1,47 @@
+/* styles.css */
+:root {
+    --primary-color: #66aaff;
+    --dark-background: rgba(27, 40, 56, 0.8);
+    --light-text: #e6e6e6;
+    --border-light: 1px solid #ddd;
+    --text-lighter: #a3a3a3;
+    --text-bold: #d1d1d1;
+    --font-family: 'Barlow', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Barlow', sans-serif;
-    font-size: 16px; /* Ajustado a un tamaño estándar */
+    font-family: var(--font-family);
+    font-size: 16px;
     background-color: #f7f7f7;
-    line-height: 1.5; /* Mejora la legibilidad */
+    line-height: 1.5;
 }
 
-.navbar-space {
-    height: 60px; /* Ajustado para que el espacio corresponda con la navbar */
-}
-
-.navbar {
-    background-color: #333;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease; /* Efecto de transición */
-}
-
-.navbar.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 100%;
-}
-
-.navbar li {
-    margin: 0 20px;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px; /* Ajustado para un mejor aspecto visual */
-    display: inline-block;
-    transition: background-color 0.3s ease; /* Efecto de transición */
-}
-
-.navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Estilos de la sección intro y otras secciones */
-.content.intro {
-    /* Estilos para la sección de introducción */
-}
-
-.text-box, #estadoDelArte .text-box {
-    width: 60%;
-    background-color: rgba(27, 40, 56, 0.8); /* Temperatura de 0.8 */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #e6e6e6; /* Un color más claro para mejorar la legibilidad en el fondo oscuro */
-}
-
-.image-box, .image-box-domotica, .image-box-antecedente1, .image-box-antecedente2, #estadoDelArte .image-box {
-    width: 40%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.image-box {
-    background-image: url('imagenes/fondo_2.png');
-}
-
-.image-box-domotica {
-    background-image: url('imagenes/fondo_3.png');
-}
-
-.title, #estadoDelArte .title {
-    color: #66aaff; /* Un tono de azul más suave */
-}
-
-.description, #estadoDelArte .description {
-    margin-bottom: 20px;
-}
-
-.image-box-antecedente1 {
-    background-image: url('imagenes/imagen_1.png');
-}
-
-.image-box-antecedente2 {
-    background-image: url('imagenes/imagen_2.png');
-}
-
-.references, #estadoDelArte .description sup {
-    color: #a3a3a3; /* Un color más claro para las referencias y notas al pie */
-}
-
-#estadoDelArte .title {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#estadoDelArte .description strong {
-    font-weight: bold;
-    color: #d1d1d1; /* Un color más claro para el texto en negrita */
-}
-
-#estadoDelArte .image-box {
-    min-height: 50px;
-    border: 1px solid #ddd;
-}
-
-/* Sección Material Utilizado */
-.material-utilizado {
-    padding: 2rem 0;
-    background-color: rgba(27, 40, 56, 0.8); /* Fondo oscuro con transparencia, similar a las otras secciones */
-    color: #e6e6e6; /* Color de texto claro para mejor contraste con el fondo oscuro */
-}
-
-.material-utilizado h1 {
-    text-align: center; /* Centrado de títulos */
-    color: #66aaff; /* Un tono de azul más suave para títulos */
-    margin-bottom: 10px; /* Espaciado entre títulos y contenido */
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 20px; /* Espaciado entre cajas */
-    max-width: 1200px; /* Ancho máximo para contener los ítems */
-    margin: 0 auto; /* Centrar el contenedor en la página */
-    padding: 20px; /* Espaciado interno del contenedor */
-}
-
-
-.sensor-item {
-    border: 1px solid #ddd; /* Borde claro para las cajas de sensores */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para las cajas de sensores */
-    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
-}
-
-.sensor-item:hover {
-    transform: scale(1.05); /* Efecto de "zoom" al pasar el cursor sobre la caja */
-}
-
-.sensor-item img {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho de la caja */
-    height: auto;
-}
-
-.sensor-item h3 {
-    font-weight: bold;
-    color: #66aaff; /* Un tono de azul más suave para los títulos de sensores */
-    margin-bottom: 10px; /* Espaciado entre título y descripción del sensor */
-}
-
-/* Estilos para la sección "Funcionamiento Interno de Sensores Analógicos" */
-
-
-
-#analog-sensors-functioning {
-    width: 100%;
-    background-color: rgba(27, 40, 56, 0.8); /* Temperatura de 0.8 */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #e6e6e6; /* Un color más claro para mejorar la legibilidad en el fondo oscuro */
-}
-
-#analog-sensors-functioning h2, #analog-sensors-functioning h3 {
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente para títulos */
-    border-radius: 10px; /* Puntas redondas para los títulos */
-    padding: 10px 15px; /* Padding alrededor de los títulos */
-    display: inline-block; /* Para que el fondo solo cubra el texto y no toda la línea */
-}
-
-#analog-sensors-functioning h2 {
-    text-align: center; /* Centrado del título */
-    color: #66aaff; /* Un tono de azul más suave para títulos */
-    margin-bottom: 20px; /* Espaciado entre el título y el contenido */
-}
-
-#analog-sensors-functioning h3 {
-    font-weight: bold;
-    color: #d1d1d1; /* Un color más claro para sub-títulos */
-    margin-top: 20px; /* Espaciado superior para los sub-títulos */
-    margin-bottom: 10px; /* Espaciado inferior para los sub-títulos */
-}
-
-#analog-sensors-functioning p {
-    margin-bottom: 15px; /* Espaciado entre párrafos */
-}
-
-#analog-sensors-functioning img {
-    margin-top: 20px; /* Espaciado superior para las imágenes */
-    margin-bottom: 20px; /* Espaciado inferior para las imágenes */
-    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
-    border-radius: 8px; /* Agregando esquinas redondeadas a las imágenes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un poco de profundidad a las imágenes */
-}
-
-/* Estilo para las formulas */
-#analog-sensors-functioning p formula {
-    display: block; /* Las fórmulas se muestran en su propia línea */
-    text-align: center; /* Centrar las fórmulas */
-    margin-top: 10px; /* Espaciado superior para las fórmulas */
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para las fórmulas */
-    padding: 10px; /* Padding alrededor de las fórmulas */
-    border-radius: 4px; /* Esquinas redondeadas para el fondo de las fórmulas */
-}
-
-.content + .content {
-    margin-top: 1px;
-}
-
-
-/* Estilos para el footer */
-footer {
+.navbar, footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
-.footer-content p {
-    margin: 0;
-}
-
-.footer-content a {
-    color: #66aaff;
+.navbar a, .footer-content a {
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-content a:hover {
+.navbar a:hover, .footer-content a:hover {
     color: #fff;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ... y otros estilos generales ... */
