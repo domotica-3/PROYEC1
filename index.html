@@ -192,14 +192,14 @@
     <h3>Escalización:</h3>
     <p>La escalización es el proceso de convertir la salida cruda de un sensor analógico en una unidad de medida comprensible. Por ejemplo, si un sensor proporciona una salida de voltaje, la escalización ayudaría a convertir ese voltaje en grados Celsius o Fahrenheit.</p>
     
-    <img src="imagenes/grafica_pendiente" alt="Gráfica de Pendiente" style="max-width:100%; height:auto; margin:2rem 0;">
+    <img src="imagenes/grafica_pendiente.jpg" alt="Gráfica de Pendiente" style="max-width:100%; height:auto; margin:2rem 0;">
     
     <h3>Aplicación de la Fórmula de la Pendiente:</h3>
     <p>La fórmula de la pendiente \( m = \frac{(Y2 - Y1)}{(X2 - X1)} \) se utiliza para determinar el factor de escala en la escalización. Por ejemplo, en un sensor con una salida de 0 a 10V DC para una gama de 0 a 100 ft WC, se pueden utilizar dos puntos de la curva de respuesta del sensor (0, 0) y (10, 100) para calcular el factor de escala o \( m \):</p>
     <p>\[ m = \frac{(100 - 0)}{(10 - 0)} = 10 \]</p>
     <p>Esta relación lineal entre la salida del sensor y la magnitud medida permite escalar la salida del sensor a una unidad de medida comprensible.</p>
     
-    <img src="imagenes/grafica_recta" alt="Gráfica de Recta" style="max-width:100%; height:auto; margin:2rem 0;">
+    <img src="imagenes/grafica_recta.jpg" alt="Gráfica de Recta" style="max-width:100%; height:auto; margin:2rem 0;">
     
     <h3>Ejemplos Prácticos de Escalización:</h3>
     <p>En la práctica, la escalización se realiza programando una ecuación de escalización en un Controlador Lógico Programable (PLC) para que, por ejemplo, una corriente de 4 mA se registre como 0 GPM (Gallons Per Minute), y una corriente de 20 mA se registre como 700 GPM. Los valores crudos proporcionados por el conversor analógico a digital (ADC) del sensor se utilizan para definir el dominio de esta escala lineal.</p>
