@@ -1,31 +1,145 @@
-/* section.css */
+/* sections.css */
 @import 'styles.css';
 
-.navbar-space {
-    height: 60px;
+/* Sección Intro */
+.content.intro {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
 }
 
-.navbar {
-    height: 50px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+/* ... otros estilos de esta sección ... */
+
+/* Sección Estado del Arte */
+#estadoDelArte {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
 }
 
-/* ... y otros estilos específicos de la sección ... */
+.text-box, #estadoDelArte .text-box {
+    width: 60%;
+    background-color: rgba(27, 40, 56, 0.8); /* Temperatura de 0.8 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e6e6e6; /* Un color más claro para mejorar la legibilidad en el fondo oscuro */
+}
+
+.image-box, .image-box-domotica, .image-box-antecedente1, .image-box-antecedente2, #estadoDelArte .image-box {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-box {
+    background-image: url('imagenes/fondo_2.png');
+}
+
+.image-box-domotica {
+    background-image: url('imagenes/fondo_3.png');
+}
+
+.title, #estadoDelArte .title {
+    color: #66aaff; /* Un tono de azul más suave */
+}
+
+.description, #estadoDelArte .description {
+    margin-bottom: 20px;
+}
+
+.image-box-antecedente1 {
+    background-image: url('imagenes/imagen_1.png');
+}
+
+.image-box-antecedente2 {
+    background-image: url('imagenes/imagen_2.png');
+}
+
+.references, #estadoDelArte .description sup {
+    color: #a3a3a3; /* Un color más claro para las referencias y notas al pie */
+}
+
+#estadoDelArte .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#estadoDelArte .description strong {
+    font-weight: bold;
+    color: #d1d1d1; /* Un color más claro para el texto en negrita */
+}
+
+#estadoDelArte .image-box {
+    min-height: 50px;
+    border: 1px solid #ddd;
+}
 
 /* Sección Material Utilizado */
 .material-utilizado {
     padding: 2rem 0;
-    background-color: var(--dark-background);
+    background-color: rgba(27, 40, 56, 0.8);
     color: var(--light-text);
 }
 
-.material-utilizado h1 {
-    text-align: center;
+.material-utilizado h1,
+.material-utilizado h2,
+.material-utilizado h3 {
     color: var(--primary-color);
-    margin-bottom: 10px;
 }
 
-/* ... y así sucesivamente para otras secciones ... */
+/* ... otros estilos de esta sección ... */
 
+/* Sección Material Eléctrico */
+.electrical-material {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
+}
+
+.material-electrico h2 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ... otros estilos de esta sección ... */
+
+/* Sección Funcionamiento Interno de Sensores Analógicos */
+#analog-sensors-functioning {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
+}
+
+#analog-sensors-functioning h2,
+#analog-sensors-functioning h3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+/* ... otros estilos de esta sección ... */
+
+/* Estilos para el Footer */
+footer {
+    background-color: #333;
+    color: var(--light-text);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: var(--primary-color);
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+
+/* ... otros estilos del footer ... */
