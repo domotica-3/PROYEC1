@@ -12,36 +12,54 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-family);
-    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px; /* Ajustado a un tamaño estándar */
     background-color: #f7f7f7;
-    line-height: 1.5;
+    line-height: 1.5; /* Mejora la legibilidad */
 }
 
-.navbar, footer {
+.navbar-space {
+    height: 60px; /* Ajustado para que el espacio corresponda con la navbar */
+}
+
+.navbar {
     background-color: #333;
-    color: #fff;
     width: 100%;
-    transition: background-color 0.3s ease;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Efecto de transición */
 }
 
-.navbar a, .footer-content a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.navbar a:hover, .footer-content a:hover {
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
     color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Ajustado para un mejor aspecto visual */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Efecto de transición */
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
-/* ... y otros estilos generales ... */
