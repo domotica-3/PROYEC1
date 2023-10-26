@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Casa Domótica</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/sections.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
     <!-- Agregando librería de íconos para mejorar la visual -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
 
 </head>
 
@@ -28,6 +28,8 @@
             <li><a href="#antecedente">Antecedente</a></li>
             <li><a href="#estadoDelArte">Estado del Arte</a></li>
             <li><a href="#Material">Sensores</a></li>
+            <li><a href="#electrical-material">Material Eléctrico</a></li>
+            <li><a href="#analog-sensors-functioning">Escalizacion Analogica</a></li>
             <!-- Otros elementos de navegación -->
         </ul>
     </div>
@@ -36,7 +38,8 @@
     <div class="content intro">
         <div class="text-box">
             <h1 class="title">Proyecto Casa Domótica</h1>
-            <p class="description">Introducción al concepto de domótica y su aplicación en la automatización de viviendas utilizando ESP32, Arduino, sensores y sistemas de control y alarma.</p>
+            <p class="description">Introducción al concepto de domótica y su aplicación en la automatización de
+                viviendas utilizando ESP32, Arduino, sensores y sistemas de control y alarma.</p>
         </div>
         <div class="image-box">
             <!-- Las imágenes y gráficos se añadirán desde CSS -->
@@ -47,7 +50,9 @@
     <div class="content" id="domotica">
         <div class="text-box">
             <h1 class="title">Qué es la Domótica</h1>
-            <p class="description">La domótica es el conjunto de tecnologías que permiten controlar de forma automática y remota los sistemas de una vivienda, mejorando la comodidad, la seguridad y la eficiencia energética.</p>
+            <p class="description">La domótica es el conjunto de tecnologías que permiten controlar de forma automática
+                y remota los sistemas de una vivienda, mejorando la comodidad, la seguridad y la eficiencia energética.
+            </p>
         </div>
         <div class="image-box-domotica">
             <!-- La imagen de fondo se añadirá desde CSS -->
@@ -62,7 +67,8 @@
         <div class="text-box">
             <h1 class="title">Antecedentes</h1>
             <p class="description">
-                La domótica, un campo en rápido crecimiento, está transformando cómo interactuamos con nuestros espacios de vida y trabajo, y Colombia no es ajena a esta revolución...
+                La domótica, un campo en rápido crecimiento, está transformando cómo interactuamos con nuestros espacios
+                de vida y trabajo, y Colombia no es ajena a esta revolución...
                 [1][2][3]. Este contexto histórico sienta las bases para nuestro proyecto: Proyecto Casa Domótica.
             </p>
             <!-- Continúa el texto -->
@@ -79,233 +85,295 @@
     <div id="estadoDelArte" class="content">
         <!-- Texto y descripciones -->
     </div>
-<!-- Sección Estado del Arte -->
-<div id="estadoDelArte" class="content">
-    <div class="text-box">
-        <h1 class="title">Estado del Arte</h1>
-        <p class="description">
-            El campo de la domótica está en constante evolución, con nuevas tecnologías y tendencias emergiendo cada año. En 2023, varios desarrollos clave están moldeando el panorama de la domótica y la automatización residencial:
-        </p>
-        <p class="description">
-            <strong>Integración de Inteligencia Artificial (IA) y el Internet de las Cosas (IoT):</strong>
-            La fusión de la IA y el IoT está remodelando la domótica, permitiendo que los dispositivos aprendan de los comportamientos de los usuarios y reaccionen de manera proactiva a diferentes situaciones<sup>1</sup>.
-        </p>
-        <p class="description">
-            <strong>Asistentes de Voz y Procesamiento del Lenguaje Natural:</strong>
-            Los asistentes de voz están multiplicándose rápidamente, con una población global esperada de 150 millones para este año. La tecnología detrás de estos gadgets está evolucionando rápidamente, permitiendo la integración con múltiples dispositivos y el reconocimiento de diferentes voces<sup>2</sup>.
-        </p>
-        <p class="description">
-            <strong>Computación en el Borde (Edge Computing):</strong>
-            Esta tendencia permite que los dispositivos IoT procesen los datos generados localmente en lugar de en servidores en la nube, lo que resulta en una latencia baja, eficiencia de ancho de banda mejorada y una mejor escalabilidad para agregar más dispositivos a la red domótica<sup>2</sup>.
-        </p>
-        <p class="description">
-            <strong>Integración y Conectividad Continua:</strong>
-            La integración y la conectividad entre dispositivos inteligentes están creciendo, permitiendo una mayor personalización y control sobre los espacios habitables<sup>3 4</sup>.
-        </p>
-        <p class="description">
-            <strong>Automatización Sostenible y Eco-amigable:</strong>
-            La domótica puede ayudar a vivir de manera más sostenible, por ejemplo, mediante la integración de fuentes de energía verde como la solar y la mejora de la eficiencia energética<sup>2</sup>.
-        </p>
-        <p class="description">
-            <strong>Uso de Dispositivos Móviles:</strong>
-            Se espera que la integración de dispositivos móviles para controlar diferentes aspectos del hogar continúe siendo una tendencia predominante, proporcionando una interfaz fácil de usar para los usuarios.
-        </p>
-        <p class="description">
-            <strong>Realidad Aumentada (AR) y Realidad Virtual (VR):</strong>
-            Estas tecnologías tienen implicaciones emocionantes para la domótica, como la facilitación del mantenimiento de dispositivos inteligentes y la mejora del diseño del hogar mediante la visualización de nuevos muebles y decoraciones antes de la compra<sup>2</sup>.
-        </p>
-        <p class="description">
-            <strong>Mejoras en Seguridad y Privacidad:</strong>
-            La tecnología biométrica y los avances en la encriptación de datos y los controles de privacidad están mejorando la seguridad de los hogares inteligentes<sup>2</sup>.
-        </p>
-        <p class="description">
-            <strong>Monitoreo de Salud en el Hogar Impulsado por IA:</strong>
-            Los dispositivos portátiles pueden rastrear datos clave de salud, emitir recordatorios para tomar medicamentos y alertar a los servicios de emergencia cuando ocurren problemas<sup>2</sup>.
-        </p>
-        <p class="description">
-            <strong>Crecimiento Continuo de la Tecnología 5G:</strong>
-            Se espera que la tecnología 5G crezca en popularidad y sofisticación, lo que significa una conectividad aún más rápida, menor latencia y soporte para dispositivos IoT más poderosos y sofisticados<sup>2</sup>.
-        </p>
-        <p class="description">
-            Estas tendencias y tecnologías están llevando la domótica a nuevos horizontes, permitiendo una mayor automatización.
-        </p>
+    <!-- Sección Estado del Arte -->
+    <div id="estadoDelArte" class="content">
+        <div class="text-box">
+            <h1 class="title">Estado del Arte</h1>
+            <p class="description">
+                El campo de la domótica está en constante evolución, con nuevas tecnologías y tendencias emergiendo cada
+                año. En 2023, varios desarrollos clave están moldeando el panorama de la domótica y la automatización
+                residencial:
+            </p>
+            <p class="description">
+                <strong>Integración de Inteligencia Artificial (IA) y el Internet de las Cosas (IoT):</strong>
+                La fusión de la IA y el IoT está remodelando la domótica, permitiendo que los dispositivos aprendan de
+                los comportamientos de los usuarios y reaccionen de manera proactiva a diferentes
+                situaciones<sup>1</sup>.
+            </p>
+            <p class="description">
+                <strong>Asistentes de Voz y Procesamiento del Lenguaje Natural:</strong>
+                Los asistentes de voz están multiplicándose rápidamente, con una población global esperada de 150
+                millones para este año. La tecnología detrás de estos gadgets está evolucionando rápidamente,
+                permitiendo la integración con múltiples dispositivos y el reconocimiento de diferentes
+                voces<sup>2</sup>.
+            </p>
+            <p class="description">
+                <strong>Computación en el Borde (Edge Computing):</strong>
+                Esta tendencia permite que los dispositivos IoT procesen los datos generados localmente en lugar de en
+                servidores en la nube, lo que resulta en una latencia baja, eficiencia de ancho de banda mejorada y una
+                mejor escalabilidad para agregar más dispositivos a la red domótica<sup>2</sup>.
+            </p>
+            <p class="description">
+                <strong>Integración y Conectividad Continua:</strong>
+                La integración y la conectividad entre dispositivos inteligentes están creciendo, permitiendo una mayor
+                personalización y control sobre los espacios habitables<sup>3 4</sup>.
+            </p>
+            <p class="description">
+                <strong>Automatización Sostenible y Eco-amigable:</strong>
+                La domótica puede ayudar a vivir de manera más sostenible, por ejemplo, mediante la integración de
+                fuentes de energía verde como la solar y la mejora de la eficiencia energética<sup>2</sup>.
+            </p>
+            <p class="description">
+                <strong>Uso de Dispositivos Móviles:</strong>
+                Se espera que la integración de dispositivos móviles para controlar diferentes aspectos del hogar
+                continúe siendo una tendencia predominante, proporcionando una interfaz fácil de usar para los usuarios.
+            </p>
+            <p class="description">
+                <strong>Realidad Aumentada (AR) y Realidad Virtual (VR):</strong>
+                Estas tecnologías tienen implicaciones emocionantes para la domótica, como la facilitación del
+                mantenimiento de dispositivos inteligentes y la mejora del diseño del hogar mediante la visualización de
+                nuevos muebles y decoraciones antes de la compra<sup>2</sup>.
+            </p>
+            <p class="description">
+                <strong>Mejoras en Seguridad y Privacidad:</strong>
+                La tecnología biométrica y los avances en la encriptación de datos y los controles de privacidad están
+                mejorando la seguridad de los hogares inteligentes<sup>2</sup>.
+            </p>
+            <p class="description">
+                <strong>Monitoreo de Salud en el Hogar Impulsado por IA:</strong>
+                Los dispositivos portátiles pueden rastrear datos clave de salud, emitir recordatorios para tomar
+                medicamentos y alertar a los servicios de emergencia cuando ocurren problemas<sup>2</sup>.
+            </p>
+            <p class="description">
+                <strong>Crecimiento Continuo de la Tecnología 5G:</strong>
+                Se espera que la tecnología 5G crezca en popularidad y sofisticación, lo que significa una conectividad
+                aún más rápida, menor latencia y soporte para dispositivos IoT más poderosos y sofisticados<sup>2</sup>.
+            </p>
+            <p class="description">
+                Estas tendencias y tecnologías están llevando la domótica a nuevos horizontes, permitiendo una mayor
+                automatización.
+            </p>
+        </div>
+        <!-- Aquí puedes añadir una imagen o cualquier otro contenido visual relacionado con el estado del arte en domótica -->
+        <div class="image-box">
+            <!-- Por ejemplo, una imagen representativa -->
+            <!-- background-image: url('ruta-de-tu-imagen.jpg'); -->
+        </div>
     </div>
-    <!-- Aquí puedes añadir una imagen o cualquier otro contenido visual relacionado con el estado del arte en domótica -->
-    <div class="image-box">
-        <!-- Por ejemplo, una imagen representativa -->
-        <!-- background-image: url('ruta-de-tu-imagen.jpg'); -->
-    </div>
-</div>
-   <!-- Sección Material Utilizado -->
-<section class="material-utilizado">
-    <h1>Material Utilizado</h1>
-    <h2>Los sensores desempeñan un papel fundamental en los sistemas domóticos. No solo recopilan información vital del entorno, sino que también permiten que el sistema tome decisiones inteligentes para optimizar la comodidad, seguridad y eficiencia de una vivienda. A continuación, presentamos una descripción de algunos de los sensores más utilizados en la domótica, junto con sus principales beneficios y cómo se integran con el módulo ESP32 para una automatización eficaz.</h2>
+    <!-- Sección Material Utilizado -->
+    <section class="material-utilizado">
+        <h1>Material Utilizado</h1>
+        <h2>Los sensores desempeñan un papel fundamental en los sistemas domóticos. No solo recopilan información vital
+            del entorno, sino que también permiten que el sistema tome decisiones inteligentes para optimizar la
+            comodidad, seguridad y eficiencia de una vivienda. A continuación, presentamos una descripción de algunos de
+            los sensores más utilizados en la domótica, junto con sus principales beneficios y cómo se integran con el
+            módulo ESP32 para una automatización eficaz.</h2>
 
-    <div class="content" id="Material">
-        <div class="sensor-item" data-associated-id="Material">
-            <h3>Sensores de Temperatura</h3>
-            <img src="imagenes/sensor_temperatura.jpg" alt="Imagen Sensor de Temperatura">
-            <p> <strong>Descripción:</strong>Capturan la temperatura del entorno.</p>
-            <p> <strong>Beneficios:</strong> Facilitan la automatización de sistemas de calefacción y refrigeración, asegurando un ambiente agradable y optimizando el consumo energético.</p>
-        </div>
-        <div class="sensor-item" data-associated-id="Material">
-            <h3>Sensores de Movimiento</h3>
-            <img src="imagenes/sensor_Mov.jpg" alt="Imagen Sensor de Movimiento">
-            <p> <strong>Descripción:</strong>Utilizan tecnología infrarroja o ultrasonido para detectar movimientos.</p>
-            <p> <strong>Beneficios:</strong> Potencian la seguridad del hogar y permiten la activación automática de dispositivos como luces al detectar presencia.</p>        
-        </div>
-        <div class="sensor-item" data-associated-id="Material">
-            <h3>Sensores de Humedad</h3>
-            <img src="imagenes/sensor_Hum.jpg" alt="Imagen Sensor de Humedad">
-            <p><strong>Descripción:</strong> Miden la humedad del ambiente.</p>
-            <p><strong>Beneficios:</strong> Regulan dispositivos como deshumidificadores o humidificadores para asegurar un ambiente cómodo y saludable en el hogar.</p>
-        </div>
-        <div class="sensor-item" data-associated-id="Material">
-            <h3>Sensor MQ-06</h3>
-            <img src="imagenes/sensor_MQ.jpg" alt="Imagen Sensor MQ-06">
-            <p><strong>Descripción:</strong>  Sensan la presencia de gases potencialmente peligrosos.</p>
-            <p><strong>Beneficios:</strong> Elevan la seguridad del hogar al alertar sobre posibles fugas de gas.</p>
-        </div>
-        <div class="sensor-item" data-associated-id="Material">
-            <h3>Foto-Sensores</h3>
-            <img src="imagenes/sensor_Luz.jpg" alt="Imagen Foto Sensores">
-            <p><strong>Descripción:</strong> Convierten la luz ambiental en una señal eléctrica.</p>
-            <p><strong>Beneficios:</strong> Automatizan la iluminación y el control de persianas, favoreciendo la eficiencia energética y la comodidad del hogar.</p>
-        </div>
-       <div class="sensor-item" data-associated-id="Material">
-            <h3>Sensor de Calidad del Agua</h3>
-            <img src="imagenes/sensor_AG.jpg" alt="Imagen Foto Sensores">
-            <p><strong>Descripción:</strong> Analizan parámetros como la conductividad del agua para determinar su calidad.</p>
-           <p><strong>Beneficios:</strong>  Garantizan un suministro de agua saludable y libre de impurezas.</p>
+        <div class="content" id="Material">
+            <div class="sensor-item" data-associated-id="Material">
+                <h3>Sensores de Temperatura</h3>
+                <img src="imagenes/Sensores/sensor_temperatura.jpg" alt="Imagen Sensor de Temperatura">
+                <p> <strong>Descripción:</strong>Capturan la temperatura del entorno.</p>
+                <p> <strong>Beneficios:</strong> Facilitan la automatización de sistemas de calefacción y refrigeración,
+                    asegurando un ambiente agradable y optimizando el consumo energético.</p>
             </div>
-    </div>
-</section>
-
- <section id="electrical-material">
-    <h2>Material Eléctrico</h2>
-    
-    <p>El material eléctrico es esencial para la construcción y experimentación en proyectos de domótica y electrónica. A continuación, se describen algunos de los materiales eléctricos comunes y sus aplicaciones:</p>
-
-    <div class="material-item">
-        <h3>1. Jumpers:</h3>
-        <p>Los jumpers son cables pequeños que se utilizan para:</p>
-        <ul>
-            <li>Conectar o desconectar dos puntos en un circuito eléctrico.</li>
-            <li>Probar circuitos.</li>
-            <li>Realizar cambios temporales en la configuración de un circuito.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>2. Arduino:</h3>
-        <p>Arduino es una plataforma de desarrollo de código abierto que se utiliza para:</p>
-        <ul>
-            <li>Crear proyectos electrónicos.</li>
-            <li>Controlar dispositivos físicos.</li>
-            <li>Recopilar datos.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>3. ESP32:</h3>
-        <p>El ESP32 es un microcontrolador de bajo costo y bajo consumo de energía que se utiliza para:</p>
-        <ul>
-            <li>Controlar dispositivos físicos.</li>
-            <li>Recopilar datos.</li>
-            <li>Conectarse a Internet.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>4. Optoacopladores:</h3>
-        <p>Los optoacopladores son dispositivos que se utilizan para:</p>
-        <ul>
-            <li>Aislar dos circuitos eléctricamente.</li>
-            <li>Proteger circuitos sensibles.</li>
-            <li>Crear circuitos de seguridad.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>5. Resistencias:</h3>
-        <p>Las resistencias son componentes eléctricos que se utilizan para:</p>
-        <ul>
-            <li>Limitar el flujo de corriente en un circuito.</li>
-            <li>Dividir el voltaje en un circuito.</li>
-            <li>Crear circuitos de protección.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>6. Capacitores:</h3>
-        <p>Los capacitores almacenan energía eléctrica y se utilizan para:</p>
-        <ul>
-            <li>Almacenar energía eléctrica.</li>
-            <li>Filtrar señales eléctricas.</li>
-            <li>Crear circuitos de temporización.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>7. Baterías 9V:</h3>
-        <p>Las baterías de 9 voltios son fuentes portátiles de energía eléctrica que se utilizan para:</p>
-        <ul>
-            <li>Proporcionar energía a dispositivos electrónicos.</li>
-            <li>Alimentar circuitos electrónicos.</li>
-        </ul>
-    </div>
-
-    <div class="material-item">
-        <h3>8. Alimentacion para Arduino:</h3>
-        <p>Un cargador para Arduino suele ser un adaptador de corriente continua (DC) que se utiliza para:</p>
-        <ul>
-            <li>Cargar las baterías de Arduino.</li>
-            <li>Mantener las baterías de Arduino cargadas.</li>
-        </ul>
-    </div>
- </section>
- 
-    
-  <!-- /* Fun SENSORES */ -->
-<div class="content intro" id="analog-sensors-functioning">
-<div id="estadoDelArte" class="content">
-<section id="analog-sensors-functioning">
-    <h2>Funcionamiento Interno de Sensores Analógicos</h2>
-    
-    <p>Los sensores analógicos desempeñan un papel crucial en sistemas domóticos, proporcionando información esencial del entorno que luego se puede utilizar para controlar otros dispositivos. Aquí se explican algunos aspectos clave del funcionamiento de los sensores analógicos, centrándose en la resolución, la escalización y la aplicación de la fórmula de la pendiente en la escalización:</p>
-    
-    <h3>Resolución:</h3>
-    <p>La resolución de un sensor se refiere a la menor variación en la magnitud medida que el sensor puede detectar. La resolución de un sensor con una salida digital suele ser la resolución numérica de la salida digital.</p>
-    
-    <h3>Escalización:</h3>
-    <p>La escalización es el proceso de convertir la salida cruda de un sensor analógico en una unidad de medida comprensible. Por ejemplo, si un sensor proporciona una salida de voltaje, la escalización ayudaría a convertir ese voltaje en grados Celsius o Fahrenheit.</p>
-    
-    <img src="imagenes/grafica_pendiente.jpg" alt="Gráfica de Pendiente" style="max-width:100%; height:auto; margin:2rem 0;">
-    
-    <h3>Aplicación de la Fórmula de la Pendiente:</h3>
-    <p>La fórmula de la pendiente \( m = \frac{(Y2 - Y1)}{(X2 - X1)} \) se utiliza para determinar el factor de escala en la escalización. Por ejemplo, en un sensor con una salida de 0 a 10V DC para una gama de 0 a 100 ft WC, se pueden utilizar dos puntos de la curva de respuesta del sensor (0, 0) y (10, 100) para calcular el factor de escala o \( m \):</p>
-    <p>\[ m = \frac{(100 - 0)}{(10 - 0)} = 10 \]</p>
-    <p>Esta relación lineal entre la salida del sensor y la magnitud medida permite escalar la salida del sensor a una unidad de medida comprensible.</p>
-    
-    <img src="imagenes/grafica_recta.jpg" alt="Gráfica de Recta" style="max-width:100%; height:auto; margin:2rem 0;">
-    
-    <h3>Ejemplos Prácticos de Escalización:</h3>
-    <p>En la práctica, la escalización se realiza programando una ecuación de escalización en un Controlador Lógico Programable (PLC) para que, por ejemplo, una corriente de 4 mA se registre como 0 GPM (Gallons Per Minute), y una corriente de 20 mA se registre como 700 GPM. Los valores crudos proporcionados por el conversor analógico a digital (ADC) del sensor se utilizan para definir el dominio de esta escala lineal.</p>
-    
-    <h3>Escalización de Señales Analógicas:</h3>
-    <p>La escalización de una señal de entrada analógica no siempre es sencilla. Por ejemplo, en un diseño de cadena de señal reciente que necesitaba escalar una señal de +/-10 V a un rango de 0 a 2.5 V para coincidir con todas las demás señales dirigidas al conversor analógico a digital (ADC), se tuvieron que considerar varios aspectos para lograr una escalización precisa.</p>
-    
-    <p>Estas explicaciones proporcionan una comprensión clara sobre cómo los sensores analógicos funcionan y cómo la resolución y la escalización son aspectos cruciales para interpretar y utilizar la información proporcionada por estos sensores en aplicaciones de domótica.</p>
-</section>
-</div>
-  <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 - Proyecto Casa Domótica por [Anderson Felipe Cantor, Jhon Gutierrez]. Universidad [de San Buenaventura].</p>
-            <p>Contacto: <a href="mailto:afcantorr@academia.usbbog.edu.co">afcantorr@academia.usbbog.edu.co</a></p>
+            <div class="sensor-item" data-associated-id="Material">
+                <h3>Sensores de Movimiento</h3>
+                <img src="imagenes/Sensores/sensor_Mov.jpg" alt="Imagen Sensor de Movimiento">
+                <p> <strong>Descripción:</strong>Utilizan tecnología infrarroja o ultrasonido para detectar movimientos.
+                </p>
+                <p> <strong>Beneficios:</strong> Potencian la seguridad del hogar y permiten la activación automática de
+                    dispositivos como luces al detectar presencia.</p>
+            </div>
+            <div class="sensor-item" data-associated-id="Material">
+                <h3>Sensores de Humedad</h3>
+                <img src="imagenes/Sensores/sensor_Hum.jpg" alt="Imagen Sensor de Humedad">
+                <p><strong>Descripción:</strong> Miden la humedad del ambiente.</p>
+                <p><strong>Beneficios:</strong> Regulan dispositivos como deshumidificadores o humidificadores para
+                    asegurar un ambiente cómodo y saludable en el hogar.</p>
+            </div>
+            <div class="sensor-item" data-associated-id="Material">
+                <h3>Sensor MQ-06</h3>
+                <img src="imagenes/Sensores/sensor_MQ.jpg" alt="Imagen Sensor MQ-06">
+                <p><strong>Descripción:</strong> Sensan la presencia de gases potencialmente peligrosos.</p>
+                <p><strong>Beneficios:</strong> Elevan la seguridad del hogar al alertar sobre posibles fugas de gas.
+                </p>
+            </div>
+            <div class="sensor-item" data-associated-id="Material">
+                <h3>Foto-Sensores</h3>
+                <img src="imagenes/Sensores/sensor_Luz.jpg" alt="Imagen Foto Sensores">
+                <p><strong>Descripción:</strong> Convierten la luz ambiental en una señal eléctrica.</p>
+                <p><strong>Beneficios:</strong> Automatizan la iluminación y el control de persianas, favoreciendo la
+                    eficiencia energética y la comodidad del hogar.</p>
+            </div>
+            <div class="sensor-item" data-associated-id="Material">
+                <h3>Sensor de Calidad del Agua</h3>
+                <img src="imagenes/Sensores/sensor_AG.jpg" alt="Imagen Foto Sensores">
+                <p><strong>Descripción:</strong> Analizan parámetros como la conductividad del agua para determinar su
+                    calidad.</p>
+                <p><strong>Beneficios:</strong> Garantizan un suministro de agua saludable y libre de impurezas.</p>
+            </div>
         </div>
-    </footer>
-  
-  
+    </section>
+
+    <section id="electrical-material">
+        <h2>Material Eléctrico</h2>
+
+        <p>El material eléctrico es esencial para la construcción y experimentación en proyectos de domótica y
+            electrónica. A continuación, se describen algunos de los materiales eléctricos comunes y sus aplicaciones:
+        </p>
+
+        <div class="material-item">
+            <h3>1. Jumpers:</h3>
+            <img src="imagenes/Material_Electrico/Jumper.jpg" alt="Jumpers"<br>
+            <p>Los jumpers son cables pequeños que se utilizan para:</p>
+            <ul>
+                <li>Conectar o desconectar dos puntos en un circuito eléctrico.</li>
+                <li>Probar circuitos.</li>
+                <li>Realizar cambios temporales en la configuración de un circuito.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>2. Arduino:</h3>
+            <img src="imagenes/Material_Electrico/Arduino.jpg" alt="Arduino"<br>
+            <p>Arduino es una plataforma de desarrollo de código abierto que se utiliza para:</p>
+            <ul>
+                <li>Crear proyectos electrónicos.</li>
+                <li>Controlar dispositivos físicos.</li>
+                <li>Recopilar datos.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>3. ESP32:</h3>
+            <img src="imagenes/Material_Electrico/ESP.jpg" alt="ESP32"<br>
+            <p>El ESP32 es un microcontrolador de bajo costo y bajo consumo de energía que se utiliza para:</p>
+            <ul>
+                <li>Controlar dispositivos físicos.</li>
+                <li>Recopilar datos.</li>
+                <li>Conectarse a Internet.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>4. Optoacopladores:</h3>
+            <img src="imagenes/Material_Electrico/Optoacopladores.jpg" alt="Optoacopladores"<br>
+            <p>Los optoacopladores son dispositivos que se utilizan para:</p>
+            <ul>
+                <li>Aislar dos circuitos eléctricamente.</li>
+                <li>Proteger circuitos sensibles.</li>
+                <li>Crear circuitos de seguridad.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>5. Resistencias:</h3>
+            <img src="imagenes/Material_Electrico/Resistencias.jpg" alt="Resistencias"<br>
+            <p>Las resistencias son componentes eléctricos que se utilizan para:</p>
+            <ul>
+                <li>Limitar el flujo de corriente en un circuito.</li>
+                <li>Dividir el voltaje en un circuito.</li>
+                <li>Crear circuitos de protección.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>6. Capacitores:</h3>
+            <img src="imagenes/Material_Electrico/Capacitor.jpg" alt="Capacitores"<br>
+            <p>Los capacitores almacenan energía eléctrica y se utilizan para:</p>
+            <ul>
+                <li>Almacenar energía eléctrica.</li>
+                <li>Filtrar señales eléctricas.</li>
+                <li>Crear circuitos de temporización.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>7. Baterías 9V:</h3>
+            <img src="imagenes/Material_Electrico/Bateria.jpg" alt="Bateria" <br>
+            <p>Las baterías de 9 voltios son fuentes portátiles de energía eléctrica que se utilizan para:</p>
+            <ul>
+                <li>Proporcionar energía a dispositivos electrónicos.</li>
+                <li>Alimentar circuitos electrónicos.</li>
+            </ul>
+        </div>
+
+        <div class="material-item">
+            <h3>8. Alimentacion para Arduino:</h3>
+            <img src="imagenes/Material_Electrico/Cargador.jpg" alt="Alimentacion"<br>
+            <p>Un cargador para Arduino suele ser un adaptador de corriente continua (DC) que se utiliza para:</p>
+            <ul>
+                <li>Cargar las baterías de Arduino.</li>
+                <li>Mantener las baterías de Arduino cargadas.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- /* Fun SENSORES */ -->
+    <div class="content intro" id="analog-sensors-functioning">
+        <div id="estadoDelArte" class="content">
+            <section id="analog-sensors-functioning">
+                <h2>Funcionamiento Interno de Sensores Analógicos</h2>
+
+                <p>Los sensores analógicos desempeñan un papel crucial en sistemas domóticos, proporcionando información
+                    esencial del entorno que luego se puede utilizar para controlar otros dispositivos. Aquí se explican
+                    algunos aspectos clave del funcionamiento de los sensores analógicos, centrándose en la resolución,
+                    la escalización y la aplicación de la fórmula de la pendiente en la escalización:</p>
+
+                <h3>Resolución:</h3>
+                <p>La resolución de un sensor se refiere a la menor variación en la magnitud medida que el sensor puede
+                    detectar. La resolución de un sensor con una salida digital suele ser la resolución numérica de la
+                    salida digital.</p>
+
+                <h3>Escalización:</h3>
+                <p>La escalización es el proceso de convertir la salida cruda de un sensor analógico en una unidad de
+                    medida comprensible. Por ejemplo, si un sensor proporciona una salida de voltaje, la escalización
+                    ayudaría a convertir ese voltaje en grados Celsius o Fahrenheit.</p>
+
+                <img src="imagenes/Graficas/grafica_pendiente.webp" alt="Gráfica de Pendiente"
+                    style="max-width:100%; height:auto; margin:2rem 0;">
+
+                <h3>Aplicación de la Fórmula de la Pendiente:</h3>
+                <p>La fórmula de la pendiente \( m = \frac{(Y2 - Y1)}{(X2 - X1)} \) se utiliza para determinar el factor
+                    de escala en la escalización. Por ejemplo, en un sensor con una salida de 0 a 10V DC para una gama
+                    de 0 a 100 ft WC, se pueden utilizar dos puntos de la curva de respuesta del sensor (0, 0) y (10,
+                    100) para calcular el factor de escala o \( m \):</p>
+                <p>\[ m = \frac{(100 - 0)}{(10 - 0)} = 10 \]</p>
+                <p>Esta relación lineal entre la salida del sensor y la magnitud medida permite escalar la salida del
+                    sensor a una unidad de medida comprensible.</p>
+
+                <img src="imagenes/Graficas/grafica_recta.jpg" alt="Gráfica de Recta"
+                    style="max-width:100%; height:auto; margin:2rem 0;">
+
+                <h3>Ejemplos Prácticos de Escalización:</h3>
+                <p>En la práctica, la escalización se realiza programando una ecuación de escalización en un Controlador
+                    Lógico Programable (PLC) para que, por ejemplo, una corriente de 4 mA se registre como 0 GPM
+                    (Gallons Per Minute), y una corriente de 20 mA se registre como 700 GPM. Los valores crudos
+                    proporcionados por el conversor analógico a digital (ADC) del sensor se utilizan para definir el
+                    dominio de esta escala lineal.</p>
+
+                <h3>Escalización de Señales Analógicas:</h3>
+                <p>La escalización de una señal de entrada analógica no siempre es sencilla. Por ejemplo, en un diseño
+                    de cadena de señal reciente que necesitaba escalar una señal de +/-10 V a un rango de 0 a 2.5 V para
+                    coincidir con todas las demás señales dirigidas al conversor analógico a digital (ADC), se tuvieron
+                    que considerar varios aspectos para lograr una escalización precisa.</p>
+
+                <p>Estas explicaciones proporcionan una comprensión clara sobre cómo los sensores analógicos funcionan y
+                    cómo la resolución y la escalización son aspectos cruciales para interpretar y utilizar la
+                    información proporcionada por estos sensores en aplicaciones de domótica.</p>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 - Proyecto Casa Domótica por [Anderson Felipe Cantor, Jhon Gutierrez]. Universidad [de
+                    San Buenaventura].</p>
+                <p>Contacto: <a href="mailto:afcantorr@academia.usbbog.edu.co">afcantorr@academia.usbbog.edu.co</a></p>
+            </div>
+        </footer>
+
+
 </body>
 
 </html>

@@ -1,0 +1,233 @@
+/* sections.css */
+@import 'styles.css';
+
+/* Sección Intro */
+.content.intro {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
+}
+
+
+/* Sección Estado del Arte */
+#estadoDelArte {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
+}
+
+.text-box,
+#estadoDelArte .text-box {
+    width: 60%;
+    background-color: rgba(27, 40, 56, 0.8);
+    /* Temperatura de 0.8 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e6e6e6;
+    /* Un color más claro para mejorar la legibilidad en el fondo oscuro */
+}
+
+.image-box,
+.image-box-domotica,
+.image-box-antecedente1,
+.image-box-antecedente2,
+#estadoDelArte .image-box {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-box {
+    background-image: url('imagenes/fondo_2.png');
+}
+
+.image-box-domotica {
+    background-image: url('imagenes/fondo_3.png');
+}
+
+.title,
+#estadoDelArte .title {
+    color: #66aaff;
+    /* Un tono de azul más suave */
+}
+
+.description,
+#estadoDelArte .description {
+    margin-bottom: 20px;
+}
+
+.image-box-antecedente1 {
+    background-image: url('imagenes/imagen_1.png');
+}
+
+.image-box-antecedente2 {
+    background-image: url('imagenes/imagen_2.png');
+}
+
+
+#estadoDelArte .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#estadoDelArte .description strong {
+    font-weight: bold;
+    color: #d1d1d1;
+    /* Un color más claro para el texto en negrita */
+}
+
+#estadoDelArte .image-box {
+    min-height: 50px;
+    border: 1px solid #ddd;
+}
+
+/*Sensore*/
+
+.material-utilizado {
+    padding: 2rem 0;
+    background-color: var(--dark-background); /* Utilización de la variable definida */
+    color: var(--light-text); /* Utilización de la variable definida */
+}
+
+.material-utilizado h1 {
+    text-align: center;
+    color: var(--primary-color); /* Utilización de la variable definida */
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sensor-item {
+    border: var(--border-light); /* Utilización de la variable definida */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Se podría considerar definir esta color como una variable si se va a reutilizar */
+    transition: transform 0.3s ease;
+}
+
+.sensor-item:hover {
+    transform: scale(1.05);
+}
+
+.sensor-item img {
+    margin: 10px 0 20px; /* Propiedad abreviada para margin-top y margin-bottom */
+    max-width: 100%;
+    height: auto;
+}
+
+.sensor-item h3 {
+    font-weight: bold;
+    color: var(--primary-color); /* Utilización de la variable definida */
+    margin-bottom: 10px;
+}
+
+/*Sensores-Fin*/
+/** Electronico */
+
+/* Sección de Material Eléctrico */
+#electrical-material {
+    padding: 2rem;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    font-family: var(--font-family);
+}
+
+#electrical-material h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#electrical-material p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.material-item {
+    background-color: rgba(255, 255, 255, 0.05);  /* Un fondo ligeramente más claro para cada ítem de material */
+    border: var(--border-light);
+    padding: 1rem;
+    margin-bottom: 2rem;  /* Espaciado entre ítems de material */
+    border-radius: 8px;  /* Esquinas redondeadas */
+}
+.material-item:hover {
+    transform: scale(1.05);
+}
+
+.material-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.material-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;  /* Esquinas redondeadas para las imágenes */
+}
+
+.material-item p {
+    margin-bottom: 1rem;
+}
+
+.material-item ul {
+    margin-bottom: 0;  /* Eliminar el margen inferior para alinear el último ítem de material con los demás */
+}
+
+.material-item ul li {
+    color: var(--text-lighter);  /* Color de texto más claro para los elementos de la lista */
+}
+
+
+/*fin Electronico*/
+/* Sección Funcionamiento Interno de Sensores Analógicos */
+#analog-sensors-functioning {
+    padding: 2rem 0;
+    background-color: rgba(27, 40, 56, 0.8);
+    color: var(--light-text);
+}
+
+#analog-sensors-functioning h2,
+#analog-sensors-functioning h3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+/* ... otros estilos de esta sección ... */
+
+/* Estilos para el Footer */
+footer {
+    background-color: #333;
+    color: var(--light-text);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: var(--primary-color);
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+
+/* ... otros estilos del footer ... */
