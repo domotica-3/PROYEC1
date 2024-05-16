@@ -1,22 +1,23 @@
-// Función para cargar el contenido del archivo Arduino .ino
-function loadArduinoCode() {
-    // Ruta al archivo Arduino .ino
+// scripts.js
 
-    const arduinoCodeFilePath = "Codigos_arduino_ESPArduino_Esca_Senales/Arduino_Esca_Senales.ino";
+document.querySelector('.navbar-search button').addEventListener('click', function() {
+    const query = document.querySelector('.navbar-search input').value;
+    if (query) {
+        // Implement search functionality here
+        alert('You searched for: ' + query);
+    }
+});
 
-    // Realizar una solicitud para cargar el archivo
-    fetch(arduinoCodeFilePath)
-        .then(response => response.text())
-        .then(code => {
-            // Mostrar el código en la sección correspondiente
-            const arduinoCodeContent = document.getElementById("arduino-code-content");
-            arduinoCodeContent.textContent = code;
-            prettyPrint(arduinoCodeContent);
-        })
-        .catch(error => {
-            console.error('Error al cargar el archivo:', error);
-        });
-}
+// Toggle dropdown on hover
+document.querySelector('.dropdown').addEventListener('mouseover', function() {
+    this.querySelector('.dropdown-content').style.display = 'flex';
+});
 
-// Llamar a la función para cargar el código cuando se cargue la página
-window.addEventListener('load', loadArduinoCode);
+document.querySelector('.dropdown').addEventListener('mouseout', function() {
+    this.querySelector('.dropdown-content').style.display = 'none';
+});
+
+// Responsive Navbar Toggle
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('.navbar-menu ul').classList.toggle('active');
+});
