@@ -11,6 +11,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Navbar */
@@ -38,6 +41,8 @@ body {
     gap: 1rem;
     margin: 0;
     padding: 0;
+    flex: 1;
+    justify-content: center;
 }
 
 .navbar-menu a {
