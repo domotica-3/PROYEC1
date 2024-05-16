@@ -2,595 +2,115 @@
 <html lang="es">
 
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Proyecto Casa Domótica</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/sections.css">
-    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Agregando librería de íconos para mejorar la visual -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/[5].7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-        </script>
-
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Navbar con efecto sticky -->
-    <div class="navbar-space"></div>
-    <div class="navbar sticky">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#domotica">Domótica</a></li>
-            <li><a href="#antecedente">Antecedente</a></li>
-            <li><a href="#estadoDelArte">Estado del Arte</a></li>
-            <li><a href="#Material">Sensores</a></li>
-            <li><a href="#electrical-material">Material Eléctrico</a></li>
-            <li><a href="#analog-sensors-functioning">Escalizacion Analogica</a></li>
-            <li><a href="#domotic-control">Sistema de Control</a></li>
-            <li><a href="#iso-standards">Normativa</a></li>      
-                
-
-
-            <!-- Otros elementos de navegación -->
-        </ul>
-    </div>
-
-    <!-- Sección Inicio -->
-    <div class="content intro">
-        <div class="text-box">
-            <h1 class="title">Proyecto Casa Domótica</h1>
-            <p class="description">Introducción al concepto de domótica y su aplicación en la automatización de
-                viviendas utilizando ESP32, Arduino, sensores y sistemas de control y alarma.</p>
-        </div>
-        <div class="image-box">
-            <!-- Las imágenes y gráficos se añadirán desde CSS -->
-        </div>
-    </div>
-
-    <!-- Sección "Qué es la Domótica" -->
-    <div class="content" id="domotica">
-        <div class="text-box">
-            <h1 class="title">Qué es la Domótica</h1>
-            <p class="description">La domótica es el conjunto de tecnologías que permiten controlar de forma automática
-                y remota los sistemas de una vivienda, mejorando la comodidad, la seguridad y la eficiencia energética.
-            </p>
-        </div>
-        
-    </div>
-
-    <!-- Sección ANTECEDENTE -->
-    <div class="content" id="antecedente">
-        <div class="image-box-antecedente1">
-            <!-- Imagen 1 -->
-        </div>
-        <div class="text-box">
-            <h1 class="title">Antecedentes</h1>
-            <p class="description">
-                La domótica, un campo en rápido crecimiento, está transformando cómo interactuamos con nuestros espacios
-                de vida y trabajo, y Colombia no es ajena a esta revolución...
-                [1][[5]][3]. Este contexto histórico sienta las bases para nuestro proyecto: Proyecto Casa Domótica.
-            </p>
-            <!-- Continúa el texto -->
-        </div>
-        <div class="image-box-antecedente2">
-            <!-- Imagen [5] -->
-        </div>
-        <p class="references">
-            <!-- Referencias -->
-        </p>
-    </div>
-
-  
-    <!-- Sección Estado del Arte -->
-    <div class="estadoDelArte" ID="content">
-        <div class="text-box">
-            <h1 class="title">Estado del Arte</h1>
-            <p class="description">
-                El campo de la domótica está en constante evolución, con nuevas tecnologías y tendencias emergiendo cada
-                año. En 2023, varios desarrollos clave están moldeando el panorama de la domótica y la automatización
-                residencial:
-            </p>
-            <p class="description">
-                <strong>Integración de Inteligencia Artificial (IA) y el Internet de las Cosas (IoT):</strong>
-                La fusión de la IA y el IoT está remodelando la domótica, permitiendo que los dispositivos aprendan de
-                los comportamientos de los usuarios y reaccionen de manera proactiva a diferentes
-                situaciones<sup>[4]</sup>.
-            </p>
-            <p class="description">
-                <strong>Asistentes de Voz y Procesamiento del Lenguaje Natural:</strong>
-                Los asistentes de voz están multiplicándose rápidamente, con una población global esperada de 150
-                millones para este año. La tecnología detrás de estos gadgets está evolucionando rápidamente,
-                permitiendo la integración con múltiples dispositivos y el reconocimiento de diferentes
-                voces<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                <strong>Computación en el Borde (Edge Computing):</strong>
-                Esta tendencia permite que los dispositivos IoT procesen los datos generados localmente en lugar de en
-                servidores en la nube, lo que resulta en una latencia baja, eficiencia de ancho de banda mejorada y una
-                mejor escalabilidad para agregar más dispositivos a la red domótica<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                <strong>Integración y Conectividad Continua:</strong>
-                La integración y la conectividad entre dispositivos inteligentes están creciendo, permitiendo una mayor
-                personalización y control sobre los espacios habitables<sup>[6][7]</sup>.
-            </p>
-            <p class="description">
-                <strong>Automatización Sostenible y Eco-amigable:</strong>
-                La domótica puede ayudar a vivir de manera más sostenible, por ejemplo, mediante la integración de
-                fuentes de energía verde como la solar y la mejora de la eficiencia energética<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                <strong>Uso de Dispositivos Móviles:</strong>
-                Se espera que la integración de dispositivos móviles para controlar diferentes aspectos del hogar
-                continúe siendo una tendencia predominante, proporcionando una interfaz fácil de usar para los usuarios.
-            </p>
-            <p class="description">
-                <strong>Realidad Aumentada (AR) y Realidad Virtual (VR):</strong>
-                Estas tecnologías tienen implicaciones emocionantes para la domótica, como la facilitación del
-                mantenimiento de dispositivos inteligentes y la mejora del diseño del hogar mediante la visualización de
-                nuevos muebles y decoraciones antes de la compra<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                <strong>Mejoras en Seguridad y Privacidad:</strong>
-                La tecnología biométrica y los avances en la encriptación de datos y los controles de privacidad están
-                mejorando la seguridad de los hogares inteligentes<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                <strong>Monitoreo de Salud en el Hogar Impulsado por IA:</strong>
-                Los dispositivos portátiles pueden rastrear datos clave de salud, emitir recordatorios para tomar
-                medicamentos y alertar a los servicios de emergencia cuando ocurren problemas<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                <strong>Crecimiento Continuo de la Tecnología 5G:</strong>
-                Se espera que la tecnología 5G crezca en popularidad y sofisticación, lo que significa una conectividad
-                aún más rápida, menor latencia y soporte para dispositivos IoT más poderosos y
-                sofisticados<sup>[5]</sup>.
-            </p>
-            <p class="description">
-                Estas tendencias y tecnologías están llevando la domótica a nuevos horizontes, permitiendo una mayor
-                automatización.
-            </p>
-        </div>
-        <!-- Aquí puedes añadir una imagen o cualquier otro contenido visual relacionado con el estado del arte en domótica -->
-        <div class="image-box">
-            <!-- Por ejemplo, una imagen representativa -->
-            <!-- background-image: url('ruta-de-tu-imagen.jpg'); -->
-        </div>
-    </div>
-    <!-- Sección Material Utilizado -->
-    <section class="material-utilizado">
-        <h1>Material Utilizado</h1>
-        <h2>Los sensores desempeñan un papel fundamental en los sistemas domóticos. No solo recopilan información vital
-            del entorno, sino que también permiten que el sistema tome decisiones inteligentes para optimizar la
-            comodidad, seguridad y eficiencia de una vivienda. A continuación, presentamos una descripción de algunos de
-            los sensores más utilizados en la domótica, junto con sus principales beneficios y cómo se integran con el
-            módulo ESP32 para una automatización eficaz.</h2>
-
-        <div class="content" id="Material">
-            <div class="sensor-item" data-associated-id="Material">
-                <h3>Sensores de Temperatura</h3>
-                <img src="imagenes/Sensores/sensor_temperatura.jpg" alt="Imagen Sensor de Temperatura">
-                <p> <strong>Descripción:</strong>Capturan la temperatura del entorno.</p>
-                <p> <strong>Beneficios:</strong> Facilitan la automatización de sistemas de calefacción y refrigeración,
-                    asegurando un ambiente agradable y optimizando el consumo energético.</p>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="imagenes/favicon.ico" alt="Casa Domótica" class="logo"></a>
             </div>
-            <div class="sensor-item" data-associated-id="Material">
-                <h3>Sensores de Movimiento</h3>
-                <img src="imagenes/Sensores/sensor_Mov.jpg" alt="Imagen Sensor de Movimiento">
-                <p> <strong>Descripción:</strong>Utilizan tecnología infrarroja o ultrasonido para detectar movimientos.
-                </p>
-                <p> <strong>Beneficios:</strong> Potencian la seguridad del hogar y permiten la activación automática de
-                    dispositivos como luces al detectar presencia.</p>
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#seguridad">Seguridad</a></li>
+                    <li><a href="#automatizacion">Automatización</a></li>
+                    <li class="dropdown">
+                        <a href="#blog">Blog</a>
+                        <div class="dropdown-content">
+                            <a href="#antecedente">Antecedente</a>
+                            <a href="#estadoDelArte">Estado del Arte</a>
+                            <a href="#Material">Sensores</a>
+                            <a href="#electrical-material">Material Eléctrico</a>
+                            <a href="#analog-sensors-functioning">Escalización Analógica</a>
+                            <a href="#domotic-control">Sistema de Control</a>
+                            <a href="#comunicacion">Modelos de Comunicación</a>
+                            <a href="#gestion">Sistemas de Gestión</a>
+                        </div>
+                    </li>
+                    <li><a href="#donde-comprar">Dónde Comprar</a></li>
+                    <li><a href="#soporte">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-search">
+                <input type="text" placeholder="Buscar...">
+                <button>🔍</button>
             </div>
-            <div class="sensor-item" data-associated-id="Material">
-                <h3>Sensores de Humedad</h3>
-                <img src="imagenes/Sensores/sensor_Hum.jpg" alt="Imagen Sensor de Humedad">
-                <p><strong>Descripción:</strong> Miden la humedad del ambiente.</p>
-                <p><strong>Beneficios:</strong> Regulan dispositivos como deshumidificadores o humidificadores para
-                    asegurar un ambiente cómodo y saludable en el hogar.</p>
-            </div>
-            <div class="sensor-item" data-associated-id="Material">
-                <h3>Sensor MQ-06</h3>
-                <img src="imagenes/Sensores/sensor_MQ.jpg" alt="Imagen Sensor MQ-06">
-                <p><strong>Descripción:</strong> Sensan la presencia de gases potencialmente peligrosos.</p>
-                <p><strong>Beneficios:</strong> Elevan la seguridad del hogar al alertar sobre posibles fugas de gas.
-                </p>
-            </div>
-            <div class="sensor-item" data-associated-id="Material">
-                <h3>Foto-Sensores</h3>
-                <img src="imagenes/Sensores/sensor_Luz.jpg" alt="Imagen Foto Sensores">
-                <p><strong>Descripción:</strong> Convierten la luz ambiental en una señal eléctrica.</p>
-                <p><strong>Beneficios:</strong> Automatizan la iluminación y el control de persianas, favoreciendo la
-                    eficiencia energética y la comodidad del hogar.</p>
-            </div>
-            <div class="sensor-item" data-associated-id="Material">
-                <h3>Sensor de Calidad del Agua</h3>
-                <img src="imagenes/Sensores/sensor_AG.jpg" alt="Imagen Foto Sensores">
-                <p><strong>Descripción:</strong> Analizan parámetros como la conductividad del agua para determinar su
-                    calidad.</p>
-                <p><strong>Beneficios:</strong> Garantizan un suministro de agua saludable y libre de impurezas.</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Hay una funcionalidad para ti.</h1>
+            <p class="hero-description">Cada producto Casa Domótica está diseñado para ser accesible.</p>
+            <a href="#" class="hero-button">Más información</a>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section id="seguridad" class="content-section">
+        <div class="container">
+            <div class="card">
+                <h2>Seguridad</h2>
+                <p>Información sobre los sistemas de seguridad implementados en Casa Domótica...</p>
             </div>
         </div>
     </section>
 
-    <section id="electrical-material">
-        <h2>Material Eléctrico</h2>
-
-        <p>El material eléctrico es esencial para la construcción y experimentación en proyectos de domótica y
-            electrónica. A continuación, se describen algunos de los materiales eléctricos comunes y sus aplicaciones:
-        </p>
-
-        <div class="material-item">
-            <h3>1. Jumpers:</h3>
-            <img src="imagenes/Material_Electrico/Jumper.jpg" alt="Jumpers" <br>
-            <p>Los jumpers son cables pequeños que se utilizan para:</p>
-            <ul>
-                <li>Conectar o desconectar dos puntos en un circuito eléctrico.</li>
-                <li>Probar circuitos.</li>
-                <li>Realizar cambios temporales en la configuración de un circuito.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>[5]. Arduino:</h3>
-            <img src="imagenes/Material_Electrico/Arduino.jpg" alt="Arduino" <br>
-            <p>Arduino es una plataforma de desarrollo de código abierto que se utiliza para:</p>
-            <ul>
-                <li>Crear proyectos electrónicos.</li>
-                <li>Controlar dispositivos físicos.</li>
-                <li>Recopilar datos.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>3. ESP32:</h3>
-            <img src="imagenes/Material_Electrico/ESP.jpg" alt="ESP32" <br>
-            <p>El ESP32 es un microcontrolador de bajo costo y bajo consumo de energía que se utiliza para:</p>
-            <ul>
-                <li>Controlar dispositivos físicos.</li>
-                <li>Recopilar datos.</li>
-                <li>Conectarse a Internet.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>4. Optoacopladores:</h3>
-            <img src="imagenes/Material_Electrico/Optoacopladores.jpg" alt="Optoacopladores" <br>
-            <p>Los optoacopladores son dispositivos que se utilizan para:</p>
-            <ul>
-                <li>Aislar dos circuitos eléctricamente.</li>
-                <li>Proteger circuitos sensibles.</li>
-                <li>Crear circuitos de seguridad.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>5. Resistencias:</h3>
-            <img src="imagenes/Material_Electrico/Resistencias.jpg" alt="Resistencias" <br>
-            <p>Las resistencias son componentes eléctricos que se utilizan para:</p>
-            <ul>
-                <li>Limitar el flujo de corriente en un circuito.</li>
-                <li>Dividir el voltaje en un circuito.</li>
-                <li>Crear circuitos de protección.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>6. Capacitores:</h3>
-            <img src="imagenes/Material_Electrico/Capacitor.jpg" alt="Capacitores" <br>
-            <p>Los capacitores almacenan energía eléctrica y se utilizan para:</p>
-            <ul>
-                <li>Almacenar energía eléctrica.</li>
-                <li>Filtrar señales eléctricas.</li>
-                <li>Crear circuitos de temporización.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>7. Baterías 9V:</h3>
-            <img src="imagenes/Material_Electrico/Bateria.jpg" alt="Bateria" <br>
-            <p>Las baterías de 9 voltios son fuentes portátiles de energía eléctrica que se utilizan para:</p>
-            <ul>
-                <li>Proporcionar energía a dispositivos electrónicos.</li>
-                <li>Alimentar circuitos electrónicos.</li>
-            </ul>
-        </div>
-
-        <div class="material-item">
-            <h3>8. Alimentacion para Arduino:</h3>
-            <img src="imagenes/Material_Electrico/Cargador.jpg" alt="Alimentacion" <br>
-            <p>Un cargador para Arduino suele ser un adaptador de corriente continua (DC) que se utiliza para:</p>
-            <ul>
-                <li>Cargar las baterías de Arduino.</li>
-                <li>Mantener las baterías de Arduino cargadas.</li>
-            </ul>
+    <section id="automatizacion" class="content-section">
+        <div class="container">
+            <div class="card">
+                <h2>Automatización</h2>
+                <p>Descubre cómo Casa Domótica automatiza tu hogar para mayor comodidad y eficiencia...</p>
+            </div>
         </div>
     </section>
 
-
-    <!-- /* Fun SENSORES */ -->
-    <div class="content intro" id="analog-sensors-functioning">
-        <div id="estadoDelArte" class="content">
-            <section id="analog-sensors-functioning">
-                <h2>Funcionamiento Interno de Sensores Analógicos</h2>
-
-                <p>Los sensores analógicos desempeñan un papel crucial en sistemas domóticos, proporcionando información
-                    esencial del entorno que luego se puede utilizar para controlar otros dispositivos. Aquí se explican
-                    algunos aspectos clave del funcionamiento de los sensores analógicos, centrándose en la resolución,
-                    la escalización y la aplicación de la fórmula de la pendiente en la escalización:</p>
-
-                <h3>Resolución:</h3>
-                <p>La resolución de un sensor se refiere a la menor variación en la magnitud medida que el sensor puede
-                    detectar. La resolución de un sensor con una salida digital suele ser la resolución numérica de la
-                    salida digital.</p>
-
-                <h3>Escalización:</h3>
-                <p>La escalización es el proceso de convertir la salida cruda de un sensor analógico en una unidad de
-                    medida comprensible. Por ejemplo, si un sensor proporciona una salida de voltaje, la escalización
-                    ayudaría a convertir ese voltaje en grados Celsius o Fahrenheit.</p>
-
-                <img src="imagenes/Graficas/grafica_pendiente.webp" alt="Gráfica de Pendiente"
-                    style="max-width:100%; height:auto; margin:2rem 0;">
-
-                <h3>Aplicación de la Fórmula de la Pendiente:</h3>
-                <p>La fórmula de la pendiente \( m = \frac{(Y2 - Y1)}{(X2 - X1)} \) se utiliza para determinar el factor
-                    de escala en la escalización. Por ejemplo, en un sensor con una salida de 0 a 10V DC para una gama
-                    de 0 a 100 ft WC, se pueden utilizar dos puntos de la curva de respuesta del sensor (0, 0) y (10,
-                    100) para calcular el factor de escala o \( m \):</p>
-                <p>\[ m = \frac{(100 - 0)}{(10 - 0)} = 10 \]</p>
-                <p>Esta relación lineal entre la salida del sensor y la magnitud medida permite escalar la salida del
-                    sensor a una unidad de medida comprensible.</p>
-
-                <img src="imagenes/Graficas/grafica_recta.jpg" alt="Gráfica de Recta"
-                    style="max-width:100%; height:auto; margin:2rem 0;">
-
-                <h3>Ejemplos Prácticos de Escalización:</h3>
-                <p>En la práctica, la escalización se realiza programando una ecuación de escalización en un Controlador
-                    Lógico Programable (PLC) para que, por ejemplo, una corriente de 4 mA se registre como 0 GPM
-                    (Gallons Per Minute), y una corriente de 20 mA se registre como 700 GPM. Los valores crudos
-                    proporcionados por el conversor analógico a digital (ADC) del sensor se utilizan para definir el
-                    dominio de esta escala lineal.</p>
-
-                <h3>Escalización de Señales Analógicas:</h3>
-                <p>La escalización de una señal de entrada analógica no siempre es sencilla. Por ejemplo, en un diseño
-                    de cadena de señal reciente que necesitaba escalar una señal de +/-10 V a un rango de 0 a [5].5 V
-                    para
-                    coincidir con todas las demás señales dirigidas al conversor analógico a digital (ADC), se tuvieron
-                    que considerar varios aspectos para lograr una escalización precisa.</p>
-
-                <p>Estas explicaciones proporcionan una comprensión clara sobre cómo los sensores analógicos funcionan y
-                    cómo la resolución y la escalización son aspectos cruciales para interpretar y utilizar la
-                    información proporcionada por estos sensores en aplicaciones de domótica.</p>
-            </section>
-
-            <!-- Sección de Descripción del Proyecto -->
-<section id="project-description">
-    <p>En nuestro proyecto de domótica, los microcontroladores ESP32 y Arduino Uno se integran para gestionar y procesar las señales provenientes de diversos sensores. Para la correcta interpretación de las señales analógicas adquiridas de los sensores LM35 y MQ-6, es esencial llevar a cabo un proceso de escalización. A continuación, se presenta una adaptación del código C++ para Arduino, optimizado para su implementación en el proyecto:</p>
-</section>
-
-<!-- Sección de Código -->
-<section id="code-section">
-    <img src="imagenes/Codigos/Arduino_Se_A.jpg" alt="Codigo1" <dr>
-    <p>Para descargar el código de escalización de señales para Arduino, haz clic en el siguiente enlace:<a href="Arduino_Esca_Senales.ino" download="Arduino_Esca_Senales.ino">Descargar Código Arduino.</a>
-</section>
-
-
-<!-- Sección de Explicación del Código -->
-<section id="code-explanation">
-    <h2>En este código:</h2>
-    <ol>
-        <li>Se definen los pines de conexión para los sensores LM35 y MQ-6 utilizando las directivas <code>#define</code>.</li>
-        <li>Se establece una referencia de voltaje (<code>VREF</code>) de 5.0V para la conversión analógica a digital.</li>
-        <li>Dentro del método <code>setup</code>, se inicia la comunicación serial a una tasa de baudios de 9600 para la depuración y monitoreo.</li>
-        <li>Dentro del bucle <code>loop</code>, se realizan las lecturas analógicas de los sensores LM35 y MQ-6, seguido por la escalización de la señal del sensor LM35 para obtener la temperatura en grados Celsius. También se aplica un filtro de paso bajo para suavizar las lecturas de temperatura.</li>
-        <li>Finalmente, se envían los datos procesados a la consola serial para depuración y monitoreo. También se menciona un comentario para la transmisión de datos al ESP32 Maestro, donde podrías incluir el código necesario para esta transmisión.</li>
-    </ol>
-    <p>Este código proporciona una estructura robusta y eficaz para la adquisición y procesamiento de señales analógicas provenientes de los sensores LM35 y MQ-6, facilitando así la integración y comunicación dentro de tu sistema domótico.</p>
-    <h3><strong> Compartimos Simulacion en Tinkercad <a href="https://www.tinkercad.com/things/11pvzYCKoSv" target="_blank">Acceder en línea.</a> <br></strong>
-     <img src="imagenes/Simulaciones/sim1.jpg" alt="Simulacion1" <br>
-    <p>Simulacion Inicial sensores analogicos.</p>
-    </h3>
-</section>
-
-        </div>
-
-        <div class="content" id="Control">
-            <section id="Control_1">
-                <!-- ... contenido previo ... -->
-            </section>
-
-            <!-- Sección de Sistema de Control -->
-            <section id="control-system">
-                <h2>Sistema de Control</h2>
-                <p>Un sistema de control es un conjunto de elementos que permiten automatizar una tarea o proceso.
-                    En el caso de la domótica, un sistema de control permite automatizar las
-                    funciones de un hogar o edificio, como el encendido y apagado de luces, la apertura y
-                    cierre de puertas, el control de la climatización, etc.</p>
-                <h3>Los sistemas de control suelen estar formados por los siguientes elementos:</h3>
+    <section id="blog" class="content-section">
+        <div class="container">
+            <div class="card">
+                <h2>Blog</h2>
                 <ul>
-                    <li><strong>Sensores:</strong> Los sensores son dispositivos que detectan cambios en el entorno. En
-                        la domótica, se utilizan sensores para detectar condiciones ambientales, como la temperatura, la
-                        humedad, la luminosidad, etc.</li>
-                    <li><strong>Actuadores:</strong> Los actuadores son dispositivos que realizan una acción en
-                        respuesta a una señal. En la domótica, se utilizan actuadores para controlar las funciones del
-                        hogar, como las luces, las puertas, la climatización, etc.</li>
-                    <li><strong>Controlador:</strong> El controlador es el dispositivo que gestiona el sistema de
-                        control. Se encarga de recibir las señales de los sensores, procesarlas y enviar las señales a
-                        los actuadores.</li>
-                    <h4>En el ámbito de la domótica, los sistemas de alarma y notificación son cruciales para garantizar
-                        la seguridad y proporcionar información en tiempo real a los habitantes. Para implementar un
-                        sistema de alarma y notificación eficaz en tu proyecto, es esencial comprender cómo se pueden
-                        integrar y configurar estos sistemas con ESP32 y Arduino Uno. A continuación, se proporciona una
-                        descripción general y recomendaciones basadas en varios recursos:</h4>
+                    <li><a href="#antecedente">Antecedente</a></li>
+                    <li><a href="#estadoDelArte">Estado del Arte</a></li>
+                    <li><a href="#Material">Sensores</a></li>
+                    <li><a href="#electrical-material">Material Eléctrico</a></li>
+                    <li><a href="#analog-sensors-functioning">Escalización Analógica</a></li>
+                    <li><a href="#domotic-control">Sistema de Control</a></li>
+                    <li><a href="#comunicacion">Modelos de Comunicación</a></li>
+                    <li><a href="#gestion">Sistemas de Gestión</a></li>
                 </ul>
-            </section>
-
-            <!-- Sección de Introducción -->
-            <section id="intro">
-                <p>En el ámbito de la domótica, el control centralizado y la comunicación entre dispositivos es
-                    fundamental para crear sistemas inteligentes y eficientes. Los microcontroladores ESP32 y Arduino,
-                    junto con una variedad de sensores, ofrecen un vasto potencial para desarrollar soluciones domóticas
-                    avanzadas que mejoren la calidad de vida de los habitantes, proporcionando comodidad y seguridad.
-                </p>
-            </section>
-
-            <!-- Sección de Control Domótico -->
-            <section id="domotic-control">
-                <h2>Control Domótico:</h2>
-                <p>Los microcontroladores como ESP32 y Arduino Uno permiten la integración y gestión de diversos
-                    sensores y actuadores en un entorno doméstico. La posibilidad de programar lógicas específicas y
-                    comunicarse con otros dispositivos expande las funcionalidades del hogar, permitiendo desde el
-                    control de iluminación y climatización hasta sistemas de seguridad avanzados.</p>
-            </section>
-
-            <!-- Sección de Posibilidades de Uso -->
-            <section id="usage-possibilities">
-                <h2>Posibilidades de Uso:</h2>
-                <ul>
-                    <li>Sensor MQ-6: Permite la detección de gases combustibles, contribuyendo a un sistema de alarma en
-                        caso de fugas de gas.</li>
-                    <li>Sensores LM35 y DHT11: Proporcionan datos de temperatura y humedad, respectivamente, que pueden
-                        utilizarse para controlar sistemas de calefacción o aire acondicionado.</li>
-                    <li>Fotosensores: Permiten ajustar la iluminación basada en la luz ambiental, contribuyendo a un uso
-                        eficiente de la energía.</li>
-                    <li>Sensor de Movimiento: Ideal para sistemas de seguridad o para activar y desactivar dispositivos
-                        automáticamente basados en la presencia.</li>
-                </ul>
-            </section>
-
-            <!-- Sección de Comunicación entre Arduino y ESP32 -->
-            <section id="communication">
-                <h2>Comunicación entre Arduino y ESP32:</h2>
-                <p>Se puede establecer una comunicación cableada entre el Arduino (esclavo) y el ESP32 (maestro)
-                    utilizando protocolos como I2C o UART, permitiendo una transmisión de datos confiable y en tiempo
-                    real entre estos dispositivos.</p>
-            </section>
-
-            <!-- Sección de Conectividad de ESP32 -->
-            <section id="esp32-connectivity">
-                <h2>Conectividad de ESP32:</h2>
-                <p>El ESP32 sobresale por su capacidad de conectarse a redes WiFi y Bluetooth, lo que permite una
-                    comunicación inalámbrica con otros dispositivos y plataformas de control domótico como Home
-                    Assistant. Esto facilita la monitorización y control remoto del sistema domótico.</p>
-            </section>
-
-            <!-- Sección de Sistema Domótico Propuesto -->
-            <section id="proposed-domotic-system">
-                <h2>Sistema Domótico Propuesto:</h2>
-                <p>En un sistema domótico diseñado con los componentes ya mencionados, se podría implementar una arquitectura donde
-                    el ESP32 actúa como un controlador maestro que gestiona la lógica del sistema y se comunica con el
-                    Arduino Uno esclavo, que a su vez está conectado a los sensores mencionados. La comunicación entre
-                    el ESP32 y el Arduino puede establecerse mediante una conexión cableada, asegurando una transmisión
-                    de datos robusta.</p>
-                <p>La ESP32, con su conectividad WiFi y Bluetooth, puede conectar el sistema domótico a una red local o
-                    a plataformas de control y monitorización en la nube. Por ejemplo, se podría utilizar Home Assistant
-                    para proporcionar una interfaz de usuario amigable y recibir notificaciones en tiempo real de los
-                    eventos detectados por los sensores.</p>
-                <p>Las alarmas y notificaciones podrían gestionarse a través de una aplicación móvil, permitiendo a los
-                    usuarios interactuar con el sistema domótico de manera remota, ya sea para monitorear las
-                    condiciones ambientales, recibir alertas de seguridad, o controlar otros dispositivos en el hogar
-                    como luces y electrodomésticos.</p>
-                <p>Con esta configuración, se consigue un sistema domótico flexible, escalable y con múltiples funciones
-                    que atienden tanto la seguridad como la comodidad de los habitantes, al mismo tiempo que se facilita
-                    la monitorización y el control remoto del entorno doméstico.</p>
-
-                    <h3>Adherencia: Una vez Planteado el sistema procedimos a realizar pruebas con el software Tinkercad esto con
-                        el fin de validar el funcionamietno de nuestro codigo base, Arduino(Esclavo)</h3>
-                    <a href="URL DESTINO"><img src="imagenes/Simulaciones/Pruebas_MQ.jpg" alt="MQ_sim"></a>
-            </section>
-        </div>
-
-
-        <!-- Sección de Normas ISO -->
-<section id="iso-standards">
-    <h2 class="title">Normativa.</h2>
-    <h1>Normas ISO:</h1>
-
-    <!-- ISO 9001 -->
-    <h>ISO 9001:</h2>
-    <ul>
-        <li>
-            <p><strong>Indicadores Clave de Rendimiento (KPIs):</strong> Los KPIs son métricas que ayudan a monitorear y medir el rendimiento y la efectividad del Sistema de Gestión de Calidad (QMS). La norma ISO 9001:2015 requiere que tu empresa determine qué necesita monitorear y medir, cómo y cuándo hacerlo, y analizar y evaluar los resultados【8】.</p>
-        </li>
-        <li>
-            <p><strong>Matrices de Calidad:</strong> Aunque no se ha encontrado una descripción detallada sobre matrices específicas, la ISO 9001 propone un Sistema de Gestión de Calidad (QMS) bien definido basado en un marco que integra conceptos, principios, procesos y recursos relacionados con la calidad, ayudando a las organizaciones a alcanzar sus objetivos【9】.</p>
-        <img src="imagenes/Norma/EJEMPLO_MATR_RIEGO.jpg"><br>
-        <P>Ejemplo Matriz Resultante</P>
-        </li>
-    </ul>
-
-    <!-- ISO 14000 -->
-    <h2>ISO 14000:</h2>
-    <p>Similar a la ISO 9001, pero enfocada en la gestión ambiental. Ambas normas se refieren al proceso de cómo se presta un servicio/producto, en lugar del servicio/producto en sí. La certificación se realiza por organizaciones de terceros, no directamente por ISO【10】.</p>
-</section>
-
-<!-- Sección de Matriz Leopold -->
-<section id="leopold-matrix">
-    <h2>Matriz Leopold:</h2>
-    <p>La Matriz de Leopold se utiliza para identificar las interacciones entre las acciones humanas y los efectos ambientales en un proyecto. Esto incluye la valoración de acciones que pueden afectar al proyecto y la asignación de valores a esas interacciones. La normativa ISO 14000, específicamente la ISO 14001, se relaciona con la gestión y evaluación de impactos ambientales, lo que se alinea con la aplicación de la Matriz de Leopold para identificar y gestionar aspectos e impactos ambientales【10】.</p>
-</section>
-
-<!-- Sección de Normas ISA -->
-<section id="isa-standards">
-    <h2>Normas ISA:</h2>
-    <h1>Desarrollo de Estándares:</h1>
-    <p>ISA desarrolla estándares en áreas clave como seguridad, integración empresarial, comunicaciones inalámbricas, instrumentación, medición y control. También está estableciendo estándares para la ciberseguridad en aplicaciones industriales【11】.</p>
-
-    <!-- Guías de Buenas Prácticas -->
-    <h1>Guías de Buenas Prácticas:</h1>
-    <p>Los estándares de ISA sirven como guías de buenas prácticas que dirigen el diseño, implementación, operación y mantenimiento adecuados del sistema, promoviendo la fiabilidad, seguridad y operacionalidad de las plantas【12】.</p>
-
-    <!-- Seguridad para Sistemas de Automatización y Control Industrial -->
-    <h2>Seguridad para Sistemas de Automatización y Control Industrial:</h2>
-    <p>Por ejemplo, la norma ISA-62443-2-1-2009 establece un programa de seguridad para sistemas de automatización y control industrial, mientras que la ISA-TR62443-2-3-2015 aborda la gestión de parches en el entorno IACS【13】.</p>
-</section>
-
-<!-- Sección de Implicancias y Estado del Proyecto -->
-<section id="project-implications">
-    <h2>Implicancias y Estado del Proyecto:</h2>
-    <ol>
-        <li>
-            <p><strong>Adherencia a Normas Internacionales:</strong> Al optar por adherirse a las normas ISO 9001 y ISO 14000 desde el inicio, se ha establecido un compromiso sólido hacia la calidad, la satisfacción del cliente y la gestión ambiental. Esto no solo mejora la percepción y la confianza en el sistema domótico que estamos desarrollando, sino que también facilita la adopción de mejores prácticas que pueden ser beneficiosas en el largo plazo.</p>
-        </li>
-        <li>
-            <p><strong>Seguridad y Fiabilidad con ISA:</strong> Las normas ISA nos ofrecen un marco para asegurar la seguridad y la fiabilidad en los sistemas de control automático, lo cual es crucial en la domótica, donde la seguridad de los datos y la operación confiable del sistema son imperativos. Al seguir las guías de ISA, estamos estableciendo una base sólida para la seguridad y la fiabilidad del sistema, aspectos que son cruciales para la aceptación y el éxito del proyecto.</p>
-        </li>
-        <li>
-            <p><strong>Estado Actual del Proyecto:</strong> Hasta la fecha, se ha dado inicio al desarrollo del prototipo de casa y sistemas asociados, incorporando tecnologías como Arduino, ESP y diversos sensores. Aunque este es un avance significativo, es solo la punta del iceberg en términos de lo que el proyecto puede lograr en el futuro. La domótica tiene el potencial de revolucionar la manera en que interactuamos con nuestros entornos, brindando una vida más cómoda, segura y eficiente.</p>
-            <img src="imagenes/diagrama_normativa_isa.jpg" alt="ISA" <dr>
-           <p> Avances Normativa ISA</p>
-        </li>
-        <li>
-            <p><strong>Perspectivas Futuras:</strong> Con la infraestructura y las normativas ya en su lugar, se encuentra en una posición ventajosa para explorar y expandir el alcance del proyecto. A medida que el proyecto evolucione, la integración de más características, tecnologías emergentes y la adherencia continua a las normativas ISO e ISA permitirá un desarrollo sostenible y la mejora continua del sistema domótico. Esto, a su vez, puede conducir a una mejor eficiencia energética, operación segura y satisfacción del cliente.</p>
-        </li>
-        <li>
-            <p><strong>Preparación para Escalabilidad y Mejoras Futuras:</strong> La planificación cuidadosa y la adherencia a las normas internacionales desde el inicio proporcionan un camino claro hacia la escalabilidad y la mejora. Con cada etapa de desarrollo, el proyecto puede evolucionar para incorporar nuevas funcionalidades, mejorar la interfaz de usuario y optimizar el rendimiento del sistema, manteniendo siempre un alto estándar de calidad y seguridad.</p>
-        </li>
-    </ol>
-</section>
-
-<!-- Sección de Resumen -->
-<section id="summary">
-    <h2>En resumen: <p>La integración de las normas ISO e ISA no solo refuerza la calidad y la seguridad del proyecto actual, sino que también establece una plataforma sólida para la expansión y la innovación futura en nuestro sistema domótico. A medida que el proyecto avance, la continua adherencia a estas normativas facilitará el cumplimiento de los objetivos a largo plazo y la satisfacción de los stakeholders involucrados.</p></h2>
-    
-</section>
-
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2023 - Proyecto Casa Domótica por [Anderson Felipe Cantor, Jhon Gutierrez]. Universidad [de
-                    San Buenaventura].</p>
-                <p>Contacto: <a href="mailto:afcantorr@academia.usbbog.edu.co">afcantorr@academia.usbbog.edu.co</a></p>
             </div>
-        </footer>
+        </div>
+    </section>
 
+    <section id="donde-comprar" class="content-section">
+        <div class="container">
+            <div class="card">
+                <h2>Dónde Comprar</h2>
+                <p>Encuentra los puntos de venta y distribuidores autorizados de Casa Domótica...</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="soporte" class="content-section">
+        <div class="container">
+            <div class="card">
+                <h2>Soporte</h2>
+                <p>¿Necesitas ayuda? Contacta con nuestro equipo de soporte para asistencia técnica...</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/scripts.js"></script>
 </body>
 
 </html>
