@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Casa Domótica</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html"
+            ><img src="imagenes/favicon.ico" alt="Casa Domótica" class="logo"
+          /></a>
+        </div>
+        <nav class="navbar-menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#seguridad">Seguridad</a></li>
+            <li><a href="#automatizacion">Automatización</a></li>
+            <li class="dropdown">
+              <a href="#blog">Blog</a>
+              <div class="dropdown-content">
+                <a href="#antecedente">Antecedente</a>
+                <a href="#estadoDelArte">Estado del Arte</a>
+                <a href="#Material">Sensores</a>
+                <a href="#electrical-material">Material Eléctrico</a>
+                <a href="#analog-sensors-functioning">Escalización Analógica</a>
+                <a href="#domotic-control">Sistema de Control</a>
+                <a href="#comunicacion">Modelos de Comunicación</a>
+                <a href="#gestion">Sistemas de Gestión</a>
+              </div>
+            </li>
+            <li><a href="#donde-comprar">Dónde Comprar</a></li>
+            <li><a href="#soporte">Soporte</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-search">
+          <input type="text" placeholder="Buscar..." />
+          <button>🔍</button>
+        </div>
+        <button class="navbar-toggle">
+          <span>☰</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">Hay una funcionalidad para ti</h1>
+        <h2 class="hero-subtitle">Hay una funcionalidad para ti</h2>
+        <a href="#" class="hero-button">Más información</a>
+      </div>
+    </section>
+
+    <!-- Seguridad Section -->
+    <section id="seguridad" class="security">
+      <div class="security-container">
+        <h1 class="section-title">SEGURIDAD</h1>
+        <h2 class="section-subtitle">Sub título</h2>
+        <div class="security-content">
+          <div class="text-content">
+            <p>Texto 1</p>
+            <p>Texto 2</p>
+          </div>
+          <div class="image-slider">
+            <div class="slider-container">
+              <div class="slide active">
+                <img src="imagenes/imagen1.jpg" alt="Imagen 1" />
+              </div>
+              <div class="slide">
+                <img src="imagenes/imagen2.jpg" alt="Imagen 2" />
+              </div>
+              <div class="slide">
+                <img src="imagenes/imagen3.jpg" alt="Imagen 3" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+      <div class="blog-container">
+        <h1 class="section-title">Blog</h1>
+        <p class="section-description">
+          Descubre más sobre nuestros proyectos y tecnologías en nuestro blog.
+        </p>
+        <div class="blog-carousel">
+          <div
+            class="blog-item"
+            onclick="window.open('documentos/antecedentes.pdf')"
+          >
+            <h3>Antecedentes</h3>
+            <p>Breve descripción de los antecedentes.</p>
+          </div>
+          <div
+            class="blog-item"
+            onclick="window.open('documentos/estado-del-arte.pdf')"
+          >
+            <h3>Estado del Arte</h3>
+            <p>Breve descripción del estado del arte.</p>
+          </div>
+          <div
+            class="blog-item"
+            onclick="window.open('documentos/sensores.pdf')"
+          >
+            <h3>Sensores</h3>
+            <p>Breve descripción sobre sensores.</p>
+          </div>
+          <div
+            class="blog-item"
+            onclick="window.open('documentos/material-electrico.pdf')"
+          >
+            <h3>Material Eléctrico</h3>
+            <p>Breve descripción sobre material eléctrico.</p>
+          </div>
+        </div>
+        <div class="blog-buttons">
+          <button class="prev" onclick="moveBlogSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveBlogSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </section>
+    <!-- Automatizacion -->
+
+    <!-- Automatización Section -->
+    <section id="automatizacion" class="automation">
+      <div class="automation-container">
+        <div class="automation-item">
+          <img src="imagenes/imagen1.jpg" alt="Producto 1" />
+          <h3>Producto 1</h3>
+          <p>Descripción breve del producto 1.</p>
+          <button onclick="location.href='#'">Learn more</button>
+          <button onclick="location.href='#'">Buy</button>
+        </div>
+        <div class="automation-item">
+          <img src="imagenes/imagen2.jpg" alt="Producto 2" />
+          <h3>Producto 2</h3>
+          <p>Descripción breve del producto 2.</p>
+          <button onclick="location.href='#'">Learn more</button>
+          <button onclick="location.href='#'">Buy</button>
+        </div>
+        <div class="automation-item">
+          <img src="imagenes/imagen3.jpg" alt="Producto 3" />
+          <h3>Producto 3</h3>
+          <p>Descripción breve del producto 3.</p>
+          <button onclick="location.href='#'">Learn more</button>
+          <button onclick="location.href='#'">Buy</button>
+        </div>
+       
+    </section>
+
+    <!-- Dónde Comprar Section -->
+    <section id="donde-comprar" class="buy-section">
+      <div class="buy-container">
+        <h1 class="section-title">Dónde Comprar</h1>
+        <p class="section-description">
+          Explora nuestros puntos de venta y encuentra el lugar perfecto para
+          adquirir nuestros productos.
+        </p>
+        <div class="buy-carousel">
+          <div class="buy-item">
+            <img src="imagenes/tienda1.png" alt="Tienda 1" />
+            <h3>Tienda 1</h3>
+            <p>Descripción breve de la Tienda 1.</p>
+          </div>
+          <div class="buy-item">
+            <img src="imagenes/tienda2.png" alt="Tienda 2" />
+            <h3>Tienda 2</h3>
+            <p>Descripción breve de la Tienda 2.</p>
+          </div>
+          <div class="buy-item">
+            <img src="imagenes/tienda3.png" alt="Tienda 3" />
+            <h3>Tienda 3</h3>
+            <p>Descripción breve de la Tienda 3.</p>
+          </div>
+          <div class="buy-item">
+            <img src="imagenes/tienda4.png" alt="Tienda 4" />
+            <h3>Tienda 4</h3>
+            <p>Descripción breve de la Tienda 4.</p>
+          </div>
+          <div class="buy-item">
+            <img src="imagenes/tienda5.png" alt="Tienda 5" />
+            <h3>Tienda 5</h3>
+            <p>Descripción breve de la Tienda 5.</p>
+          </div>
+          <div class="buy-item">
+            <img src="imagenes/tienda6.png" alt="Tienda 6" />
+            <h3>Tienda 6</h3>
+            <p>Descripción breve de la Tienda 6.</p>
+          </div>
+        </div>
+        <div class="buy-buttons">
+          <button class="prev" onclick="moveBuySlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveBuySlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soporte Section -->
+    <section id="soporte" class="support-section">
+      <div class="support-container">
+        <h1 class="section-title">Soporte</h1>
+        <div class="support-creators">
+          <div class="creator">
+            <img
+              src="imagenes/SOPORTE/creador1.jpg"
+              alt="Creador 1"
+              class="creator-photo"
+            />
+            <h3>PLON JAIRO GUTIERREZ</h3>
+            <p>
+              CEO- PROMISCUOUS ENGINEER, EXPERT IN ELECTRICAL INFRASTRUCTURE.
+            </p>
+          </div>
+          <div class="creator">
+            <img
+              src="imagenes/SOPORTE/creador2.jpeg"
+              alt="Creador 2"
+              class="creator-photo"
+            />
+            <h3>ANDERSON FELIPE CANTOR ROA</h3>
+            <p>CO-FOUNDER, INFRASTRUCTURAL DEVELOPER, HYPERSEXUAL.</p>
+          </div>
+        </div>
+        <div class="support-contact">
+          <div
+            class="contact-item"
+            onclick="window.open('https://www.instagram.com')"
+          >
+            <img src="imagenes/SOPORTE/instagram.png" alt="Instagram" />
+            <p>Instagram</p>
+          </div>
+          <div
+            class="contact-item"
+            onclick="window.open('https://www.whatsapp.com')"
+          >
+            <img src="imagenes/SOPORTE/whatsapp.png" alt="WhatsApp" />
+            <p>WhatsApp</p>
+          </div>
+          <div
+            class="contact-item"
+            onclick="window.open('https://www.phone.com')"
+          >
+            <img src="imagenes/SOPORTE/telefono.png" alt="Teléfono" />
+            <p>Teléfono</p>
+          </div>
+          <div
+            class="contact-item"
+            onclick="window.open('https://www.twitter.com')"
+          >
+            <img
+              src="imagenes/SOPORTE/189a1fdfbe358e78b748df25013bd02a.png"
+              alt="Twitter"
+            />
+            <p>Twitter</p>
+          </div>
+          <div
+            class="contact-item"
+            onclick="window.open('https://www.maps.google.com')"
+          >
+            <img src="imagenes/SOPORTE/kick (1).png" alt="Dirección" />
+            <p>Dirección</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 Casa Domótica. All rights reserved.</p>
+        <nav class="footer-menu">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales and Refunds</a>
+          <a href="#">Legal</a>
+          <a href="#">Site Map</a>
+        </nav>
+        <p>United States</p>
+      </div>
+    </footer>
+
+    <script src="java.js"></script>
+  </body>
+</html>
